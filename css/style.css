@@ -1,0 +1,282 @@
+/* FONTS */
+@font-face {
+  font-family: "Firs neue";
+  src: url("../fonts/TTFirsNeue-Bold.otf");
+}
+@font-face {
+  font-family: "Firs neue Regular";
+  src: url("../fonts/TTFirsNeue-Regular.otf");
+}
+@font-face {
+  font-family: "Firs neue DemiBold";
+  src: url("../fonts/TTFirsNeue-DemiBold.otf");
+}
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Mont-SemiBold.otf");
+}
+@font-face {
+  font-family: "Mont Heavy";
+  src: url("../fonts/Mont-Heavy.otf");
+}
+@font-face {
+  font-family: "Mont Regular";
+  src: url("../fonts/Mont-Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../fonts/EBGaramond-MediumItalic.ttf");
+}
+
+/* ----------------------------------------------- */
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* .container{
+  width: 100%;
+  height: 100vh;
+} */
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+header{
+  background-color: #FAF4EF;
+  height: 20%;
+}
+
+.full-title{
+  position: relative;
+  background-color: #FAF4EF;
+
+}
+
+header .title{
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 2vh;
+}
+header .sub-title{
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 4vh;
+}
+
+header .title p{
+  font-size: 170px;
+  text-transform: uppercase;
+  font-family: "Firs neue";
+  letter-spacing: 10px;
+  color: #EEDAC4;
+  line-height: 90%;
+}
+
+header .sub-title p{
+  font-size: 90px;
+  letter-spacing: 10px;
+  line-height: 90%;
+}
+
+header .sub-title p:nth-child(1){
+  text-transform: uppercase;
+  font-family: 'Mont';
+}
+header .sub-title p:nth-child(2){
+  font-family: 'Garamond';
+}
+
+.promos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.promos .promos-title{
+  font-size: 60px;
+}
+.promos .promos-title p{
+  margin-top: 110px;
+  font-family: "Firs neue Regular"
+}
+
+.promos .promos-title p span{
+  background-color: #F9CBC9;
+  color: #884550;
+  padding: 5px;
+  font-family: "Firs neue DemiBold";
+}
+
+.promos .promos-title img{
+  margin: 5px;
+  width: 105%;
+}
+
+.title-barra{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* PROMO BRILLA */
+.promos .promo-brilla{
+  background-color: #E9D3D3;
+  width: 75%;
+  height: 30vh;
+  padding: 30px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.promos .promo-brilla .promo-title{
+  font-family: "Firs neue";
+  font-size: 60px;
+  color: #884550;
+  position: absolute;
+  top: 2.9vh;
+}
+
+.promos .promo-brilla .cuerpo-promo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.promos .promo-brilla .cuerpo-promo p:nth-child(1){
+  font-family: "Mont Heavy";
+  font-size: 35px;
+  color: #884550;
+  margin-bottom: 20px;
+}
+
+.promos .promo-brilla .cuerpo-promo p:nth-child(2){
+  font-family: "Mont Regular";
+  font-size: 30px;
+  color: #7B6969;
+  margin-top: 40px;
+}
+
+/* PROMO BONITA */
+.promos .promo-bonita{
+  background-color: #F9CBC9;
+  width: 75%;
+  height: 30vh;
+  padding: 30px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.promos .promo-bonita .promo-title{
+  font-family: "Firs neue";
+  font-size: 60px;
+  color: #884550;
+  position: absolute;
+  top: 3.5vh;
+}
+
+.promos .promo-bonita .cuerpo-promo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.promos .promo-bonita .cuerpo-promo p:nth-child(1){
+  font-family: "Mont Heavy";
+  font-size: 35px;
+  color: #884550;
+  margin-bottom: 20px;
+}
+
+.promos .promo-bonita .cuerpo-promo p:nth-child(2){
+  font-family: "Mont Regular";
+  font-size: 30px;
+  color: #EE7686;
+  margin-top: 40px;
+}
+
+/* PROMO BB */
+.promos .promo-bb{
+  background-color: #E9D3D3;
+  width: 75%;
+  height: 30vh;
+  padding: 30px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.promos .promo-bb .promo-title{
+  font-family: "Firs neue";
+  font-size: 60px;
+  color: #884550;
+  position: absolute;
+  top: 4vh;
+}
+
+.promos .promo-bb .cuerpo-promo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.promos .promo-bb .cuerpo-promo p:nth-child(1){
+  font-family: "Mont Heavy";
+  font-size: 35px;
+  color: #884550;
+  margin-bottom: 20px;
+}
+
+.promos .promo-bb .cuerpo-promo p:nth-child(2){
+  font-family: "Mont Regular";
+  font-size: 30px;
+  color: #7B6969;
+  margin-top: 40px;
+}
+
+/* BARRA ABAJO DEL TEXTO */
+.barra-title{
+  width: 75%;
+  height: 1.5vh;
+  background-color: #FAF4EF;
+}
+
+.barra-title-bb{
+  width: 55%;
+  height: 1.5vh;
+  background-color: #FAF4EF;
+}
