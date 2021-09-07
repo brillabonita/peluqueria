@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Brilla Bonita Peluquería</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,61 +23,77 @@
     </div>
   </header>
   <div class="container">
+    <!-- Promos -->
     <div class="promos">
       <div class="promos-title">
         <p>Para estar <span>siempre linda</span> </p>
         <img src="../img/arrow.png" alt="arrow">
       </div>
-      <div class="promo-brilla">
-        <div class="title-barra">
-          <p class="promo-title">PROMO BRILLA</p>
-          <div class="barra-title"></div>
-        </div>
-        <div class="cuerpo-promo">
-          <p>Lavado + Tratamiento SOS + Brushing</p>
-          <p>Recupera el brillo y suavidad desde la primera aplicación, con acción anti-frizz y anti-porosidad, recuperando la luminosidad de tu pelo. Ideal en cabellos químicamente tratados.</p>
-        </div>
-      </div>
-      <div class="promo-bonita">
-        <div class="title-barra">
-          <p class="promo-title">PROMO BONITA</p>
-          <div class="barra-title"></div>
-        </div>
-        <div class="cuerpo-promo">
-          <p class="tratamiento-promo">lavado con shampoo estabilizador de Ph + Mascara de Argan + Brushing</p>
-          <p class="descripcion-promo">Ahora verse bonita es mas rápido, mas fácil y mas económico.</p>
-        </div>
-      </div>
-      <div class="promo-bb">
-        <div class="title-barra">
-          <p class="promo-title">PROMO BB</p>
-          <div class="barra-title-bb"></div>
+
+      <div class="pormos-contenedor">
+        <div class="pormos-list js-flickity" data-flickity-options='{ "wrapAround": true }'>
+
+          <div class="promo-brilla">
+            <div class="title-barra">
+              <p class="promo-title">PROMO BRILLA</p>
+              <div class="barra-title"></div>
+            </div>
+            <div class="cuerpo-promo">
+              <p>Lavado + Tratamiento SOS + Brushing</p>
+              <p>Recupera el brillo y suavidad desde la primera aplicación, con acción anti-frizz y anti-porosidad,
+                recuperando la luminosidad de tu pelo. Ideal en cabellos químicamente tratados.</p>
+            </div>
+          </div>
+
+          <div class="promo-bonita">
+            <div class="title-barra">
+              <p class="promo-title">PROMO BONITA</p>
+              <div class="barra-title"></div>
+            </div>
+            <div class="cuerpo-promo">
+              <p class="tratamiento-promo">lavado con shampoo estabilizador de Ph + Mascara de Argan + Brushing</p>
+              <p class="descripcion-promo">Ahora verse bonita es mas rápido, mas fácil y mas económico.</p>
+            </div>
+          </div>
+
+          <div class="promo-bb">
+            <div class="title-barra">
+              <p class="promo-title">PROMO BB</p>
+              <div class="barra-title-bb"></div>
+            </div>
+            <div class="cuerpo-promo">
+              <p class="tratamiento-promo">Color + mascara post color de regalo</p>
+              <p class="descripcion-promo">Cuida tu pelo mientras logras una coloración perfecta.</p>
+            </div>
+          </div>
 
         </div>
-        <div class="cuerpo-promo">
-          <p class="tratamiento-promo">Color + mascara post color de regalo</p>
-          <p class="descripcion-promo">Cuida tu pelo mientras logras una coloración perfecta.</p>
-        </div>
       </div>
+
+
+    </div>
+    <!-- Menú desplegable -->
+    <div class="menu-desplegable">
+      <!-- Reparación -->
       <div class="reparacion">
         <div class="reparacion-title">
-          <p><span>Si de reparación</span> habalamos...</p>
-          <img src="../img/arrow2.png" alt="arrow">
+          <p><span>Si de reparación</span> habalamos... <i class="fas fa-plus"></i><i class="fas fa-minus"></i></p>
         </div>
         <div class="reparacion-1">
           <div class="rep-title">
-              <p>1. DOSIS DE PLEX</p>
-              <img src="../img/reparacion1.png" alt="dosis de plex">
+            <p>1. DOSIS DE PLEX</p>
+            <img src="../img/reparacion1.png" alt="dosis de plex">
           </div>
           <div class="cuerpo-rep">
-            <p>Tratamiento de sanación capilar a base del maravilloso aceite de marula. Recupera cabellos dañados, portege el cabello antes y después de un tratamiento químico.</p>
+            <p>Tratamiento de sanación capilar a base del maravilloso aceite de marula. Recupera cabellos dañados,
+              portege el cabello antes y después de un tratamiento químico.</p>
           </div>
         </div>
-
       </div>
     </div>
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
