@@ -45,7 +45,33 @@ body{
 
 header{
   background-color: #FAF4EF;
+}
+
+.wave {
+  display: block;
+  position: relative;
+  top: -2px;
+  height: 425px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1170 425" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(250, 244, 239, 1)" d="M 0 45 C 202.2 45 134.8 108 337 108 L 337 108 L 337 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(250, 244, 239, 1)" d="M 336 108 C 472.2 108 426.8 56 563 56 L 563 56 L 563 0 L 336 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 562 56 C 760.6 56 694.4 104 893 104 L 893 104 L 893 0 L 562 0 Z" stroke-width="0"></path><path fill="rgba(47, 73, 94, 1)" d="M 892 104 C 1058.8 104 1003.2 45 1170 45 L 1170 45 L 1170 0 L 892 0 Z" stroke-width="0"></path></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ 
+ @media (max-width:1169px) {
+  .wave {
+    background-size: contain;
+  }
+ }
+ 
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo img{
   height: 20vh;
+  margin: 5vw;
 }
 
 .full-title{
@@ -295,9 +321,9 @@ header .sub-title p:nth-child(2){
   background-color: #FAF4EF;
 }
 
-/* REPARACION */
+/* tratamientos */
 
-.reparacion{
+.tratamientos{
   background-color: #FAF4EF;
   width: 100%;
   display: flex;
@@ -305,39 +331,35 @@ header .sub-title p:nth-child(2){
   align-items: center;
   justify-content: space-around;
   position: relative;
+  transition: all 0.9s ease;
 }
 
-.reparacion .reparacion-title{
-  /* overflow: hidden; */
+.tratamiento-title{
   width: 90%;
   padding: 30px;
   margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  display: block;
 }
 
-.reparacion .reparacion-title i{
+.tratamiento-title i{
   font-size: 40px;
   color: #7B6969;
 }
 
-.reparacion .reparacion-title a{
+.tratamiento-title .rt-content{
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* gap: 1vh; */
   text-decoration: none;
 }
 
-.reparacion .reparacion-title .fa-minus{
+.tratamiento-title .fa-minus{
   display: none;
 }
 
-.reparacion .reparacion-title a span{
+.tratamiento-title .rt-content span{
   font-family: "Firs neue DemiBold";
   font-size: 50px;
   color: #7B6969;
@@ -345,27 +367,36 @@ header .sub-title p:nth-child(2){
   background-color: #EEDAC4;
 }
 
-.reparacion .reparacion-title a{
+.tratamiento-title .rt-content{
   font-family: "Firs neue Regular";
   font-size: 50px;
   color: #7B6969;
 }
 
-/* REPARACION 1 */
-.reparacion .reparacion-1 .cuerpo-rep{
-  /* max-height: 0;
-  overflow: hidden; */
-  position: relative;
+/* REPARACION */
+
+.reparacion{
+  height: 0;
+  overflow: hidden;
+  transition: all 7s ease;
+}
+
+/* Si esta activo muestra info */
+.tratamientos.activo .reparacion{
+  height: auto;
+}
+
+.cuerpo-rep{
   width: 90%;
   padding: 30px;
-  margin: 15px;
+  margin: 15px; 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
 }
 
-.reparacion .reparacion-1 .cuerpo-rep .rep-title {
+.cuerpo-rep .rep-title {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -373,18 +404,23 @@ header .sub-title p:nth-child(2){
   justify-content: flex-start;
   gap: 1vh;
 }
-.reparacion .reparacion-1 .cuerpo-rep .rep-title p{
+.reparacion .cuerpo-rep .rep-title p{
   font-family: "Firs neue";
   font-size: 40px;
   color: #7B6969;
 }
 
-.reparacion .reparacion-1 .rep-title > img{
+.reparacion .rep-title > img{
   height: 60px;
 }
 
-.reparacion .reparacion-1 .cuerpo-rep p{
+.reparacion .cuerpo-rep p{
   font-family: "Mont Regular";
-  font-size: 30px;
+  font-size: 25px;
   color: #7B6969;
   margin: 20px 0;
+}
+
+/* #rep{
+  display: none;
+} */
