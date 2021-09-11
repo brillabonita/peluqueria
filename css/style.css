@@ -182,6 +182,11 @@ header .sub-title p:nth-child(2){
   align-items: center;
   justify-content: space-around;
   position: relative;
+  overflow: hidden;
+}
+
+.promo-img{
+  height: 30vh;
 }
 
 .promos .promo-brilla .promo-title{
@@ -331,7 +336,7 @@ header .sub-title p:nth-child(2){
   align-items: center;
   justify-content: space-around;
   position: relative;
-  transition: all 0.9s ease;
+  transition: all 4s ease;
 }
 
 .tratamiento-title{
@@ -378,12 +383,22 @@ header .sub-title p:nth-child(2){
 .reparacion{
   height: 0;
   overflow: hidden;
-  transition: all 7s ease;
 }
 
 /* Si esta activo muestra info */
 .tratamientos.activo .reparacion{
   height: auto;
+  /* transition: all .5s ease; */
+  /* animation: moveToRight 2s ease; */
+}
+
+@keyframes moveToRight {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: auto;
+  }
 }
 
 .cuerpo-rep{
@@ -392,29 +407,31 @@ header .sub-title p:nth-child(2){
   margin: 15px; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
 }
 
 .cuerpo-rep .rep-title {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 1vh;
 }
-.reparacion .cuerpo-rep .rep-title p{
+
+.cuerpo-rep .rep-title p{
   font-family: "Firs neue";
   font-size: 40px;
   color: #7B6969;
 }
 
-.reparacion .rep-title > img{
+.rep-title > img{
   height: 60px;
 }
 
-.reparacion .cuerpo-rep p{
+/* .reparacion .cuerpo-rep p{ */
+  body > div > div.menu-desplegable > div.tratamientos.activo > div > div > p{
   font-family: "Mont Regular";
   font-size: 25px;
   color: #7B6969;
@@ -424,3 +441,77 @@ header .sub-title p:nth-child(2){
 /* #rep{
   display: none;
 } */
+
+.rosado{
+  background-color: #F9CBC9 !important;
+}
+
+.loreal{
+  font-family: 'Firs neue Regular';
+  color: #EE7686;
+}
+
+.loreal-title{
+  color: #EE7686 !important;
+}
+
+.tratamientos.activo .loreal{
+  height: auto;
+}
+
+.bg-loreal{
+  background-color: #fff !important;
+}
+
+.bg-mimo{
+  background-color: #E9D3D3 !important;
+}
+
+.mimo{
+  background-color: #EDE3D9;
+}
+
+.lacio{
+  font-family: 'Garamond' !important;
+  background-color: #fff !important;
+}
+
+.lacio-org-title{
+  font-family: 'Garamond' !important;
+  font-size: 70px !important;
+}
+
+.organico-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vh;
+  margin-top: 10px;
+}
+
+.organico-title p{
+  font-family: "Firs neue";
+  font-size: 35px;
+  color: #7B6969;
+  gap: 1vh;
+}
+
+.organico-title img{
+  height: 60px;
+}
+
+body > div > div.menu-desplegable > div.tratamientos.bg-loreal.activo > div:nth-child(4) > div > div.organico > p {
+  font-family: "Mont Regular";
+  font-size: 20px;
+  color: #7B6969;
+  margin: 30px 0;
+}
+
+.hr{
+  height: 2px;
+  width: 80%;
+  background-color:#7B6969;
+  margin-bottom: 30px;
+}
