@@ -12,29 +12,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <!-- <div class="full-title">
-        <div class="title">
-          <p>
-            TRATA <br />
-            MIENTOS
-          </p>
-        </div>
-        <div class="sub-title">
-          <p>Carta de</p>
-          <p>tratamientos</p>
-        </div>
-        <img src="./img/logo.png" alt="logo" />
-      </div> -->
-
       <div class="logo">
         <img src="./img/logo.svg" alt="Brilla Bonita" />
       </div>
     </header>
-    <div class="container">
+
+    <div class="contenedor">
       <!-- Promos -->
       <div class="promos">
         <div class="promos-title">
@@ -48,57 +40,15 @@
             data-flickity-options='{ "wrapAround": true }'
           >
             <div class="promo-brilla">
-              <!-- <div class="title-barra">
-                <p class="promo-title">PROMO BRILLA</p>
-                <div class="barra-title"></div>
-              </div>
-              <div class="cuerpo-promo">
-                <p>Lavado + Tratamiento SOS + Brushing</p>
-                <p>
-                  Recupera el brillo y suavidad desde la primera aplicación, con
-                  acción anti-frizz y anti-porosidad, recuperando la luminosidad
-                  de tu pelo. Ideal en cabellos químicamente tratados.
-                </p>
-              </div> -->
-
-              <img class="promo-img" src="./img/promo-brilla.png" alt="">
+              <img class="promo-img" src="./img/promo-brilla.png" alt="" />
             </div>
 
             <div class="promo-bonita">
-              <!-- <div class="title-barra">
-                <p class="promo-title">PROMO BONITA</p>
-                <div class="barra-title"></div>
-              </div>
-              <div class="cuerpo-promo">
-                <p class="tratamiento-promo">
-                  lavado con shampoo estabilizador de Ph + Mascara de Argan +
-                  Brushing
-                </p>
-                <p class="descripcion-promo">
-                  Ahora verse bonita es mas rápido, mas fácil y mas económico.
-                </p>
-              </div> -->
-
-              <img class="promo-img" src="./img/promo-bonita.png" alt="">
-
+              <img class="promo-img" src="./img/promo-bonita.png" alt="" />
             </div>
 
             <div class="promo-bb">
-              <!-- <div class="title-barra">
-                <p class="promo-title">PROMO BB</p>
-                <div class="barra-title-bb"></div>
-              </div>
-              <div class="cuerpo-promo">
-                <p class="tratamiento-promo">
-                  Color + mascara post color de regalo
-                </p>
-                <p class="descripcion-promo">
-                  Cuida tu pelo mientras logras una coloración perfecta.
-                </p>
-              </div> -->
-
-              <img class="promo-img" src="./img/promo-bb.png" alt="">
-
+              <img class="promo-img" src="./img/promo-bb.png" alt="" />
             </div>
           </div>
         </div>
@@ -154,6 +104,10 @@
                 Colágeno, Elastina y D-Pantenol que actuán en las partes porosas
                 del cabello.
               </p>
+              <p class="loreal-title">
+                <span class="garamond">Resultado:</span>
+                <b>Cabellos más saludables y resistentes</b>
+              </p>
             </div>
           </div>
           <!-- Reparacion 4 -->
@@ -164,9 +118,8 @@
                 <img src="./img/reparacion4.png" alt="dosis de plex" />
               </div>
               <p>
-                Tratamiento de sanación capilar a base del maravilloso aceite de
-                marula. Recupera cabellos dañados, portege el cabello antes y
-                después de un <b>tratamiento químico</b>.
+                Tratamiento para restaurar la keratina del cabello. Resultados
+                instantáneos, gana en brillo, sedocidad e hidratación.
               </p>
             </div>
           </div>
@@ -234,13 +187,12 @@
                 <img src="./img/reparacion9.png" alt="dosis de plex" />
               </div>
               <p>
-                <span>KERA PLUS BLONDE:</span> Para restaurar la keratina y mantener
-                hidratados, sanos y brillosos los cabellos rubios y platinados
-                realzando sus reflejos. 
-                <br>
-                <span>HIDRATONE:</span> Hidrata y protege la fibra de
-                agresores externos mientras eliminas los tonos naranjas
-                indeseables.
+                <span>KERA PLUS BLONDE:</span> Para restaurar la keratina y
+                mantener hidratados, sanos y brillosos los cabellos rubios y
+                platinados realzando sus reflejos.
+                <br />
+                <span>HIDRATONE:</span> Hidrata y protege la fibra de agresores
+                externos mientras eliminas los tonos naranjas indeseables.
               </p>
             </div>
           </div>
@@ -249,8 +201,11 @@
         <div class="tratamientos bg-loreal">
           <div class="tratamiento-title">
             <div class="rt-content">
-              <div class="loreal"><span class="rosado">Un tratamiento especial para tí</span> de la mano de Loreal</div>
-              
+              <div class="loreal">
+                <span class="rosado">Un tratamiento especial para tí</span> de
+                la mano de Loreal
+              </div>
+
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
@@ -263,7 +218,10 @@
                 <img src="./img/loreal-1.png" alt="dosis de plex" />
               </div>
               <p>
-                <strong>El más recomendado después de una decoloración</strong> de la mano de Loreal, por su acción antioxidante y de protección. Logra un cabello rubio nutrido y brillante con tonos amarillos neutralizados.
+                <strong>El más recomendado después de una decoloración</strong>
+                de la mano de Loreal, por su acción antioxidante y de
+                protección. Logra un cabello rubio nutrido y brillante con tonos
+                amarillos neutralizados.
               </p>
             </div>
           </div>
@@ -275,7 +233,10 @@
                 <img src="./img/loreal-2.png" alt="dosis de plex" />
               </div>
               <p>
-                Por qué amamos los cabellos largos y cuidados, prolonger logra renovar tu cabello, haciéndolo más resistente y con puntas más fuerte. Comprobado después de su uso, hay una reducción del 66% de las puntas abiertas.
+                Por qué amamos los cabellos largos y cuidados, prolonger logra
+                renovar tu cabello, haciéndolo más resistente y con puntas más
+                fuerte. Comprobado después de su uso, hay una reducción del 66%
+                de las puntas abiertas.
               </p>
             </div>
           </div>
@@ -287,7 +248,9 @@
                 <img src="./img/loreal-3.png" alt="dosis de plex" />
               </div>
               <p>
-                Cabello más resistente, liso y brillante. Desarrollado para reparar instantáneamente el cabello fino para un efecto de control mas ligero y delicado.
+                Cabello más resistente, liso y brillante. Desarrollado para
+                reparar instantáneamente el cabello fino para un efecto de
+                control mas ligero y delicado.
               </p>
             </div>
           </div>
@@ -299,7 +262,10 @@
                 <img src="./img/loreal-4.png" alt="dosis de plex" />
               </div>
               <p>
-                Brillo unlocker y tratamiento de escudo de color para el cabello con color. Logra proteger  incluso los colores más sensibles, evitando que se desvanezca, aportando nutrición e iluminación a las hebras.
+                Brillo unlocker y tratamiento de escudo de color para el cabello
+                con color. Logra proteger incluso los colores más sensibles,
+                evitando que se desvanezca, aportando nutrición e iluminación a
+                las hebras.
               </p>
             </div>
           </div>
@@ -310,7 +276,8 @@
           <div class="tratamiento-title">
             <div class="rt-content">
               <div class="">
-                Por que tu pelo <span class="mimo">necesita que lo mimes…</span> </div>
+                Por que tu pelo <span class="mimo">necesita que lo mimes…</span>
+              </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
@@ -323,7 +290,8 @@
                 <img src="./img/mimo-1.png" alt="dosis de plex" />
               </div>
               <p>
-                Su exclusiva fórmula Nano White aporta antioxidantes, logrando un brillo intenso con control del frío y reducción del volumen.
+                Su exclusiva fórmula Nano White aporta antioxidantes, logrando
+                un brillo intenso con control del frío y reducción del volumen.
               </p>
             </div>
           </div>
@@ -335,7 +303,8 @@
                 <img src="./img/mimo-2.png" alt="dosis de plex" />
               </div>
               <p>
-                A la tecnología Nano White se asocia keratin complex logrando además matizar los tonos no deseados dejando un reflejo perlado.
+                A la tecnología Nano White se asocia keratin complex logrando
+                además matizar los tonos no deseados dejando un reflejo perlado.
               </p>
             </div>
           </div>
@@ -347,7 +316,9 @@
                 <img src="./img/mimo-3.png" alt="dosis de plex" />
               </div>
               <p>
-                Combinación inteligente de extractos vegetales, aceites y phytoactivos, logra preservar la fibra capilar de las acciones externas, vuelve a las fibras más resistentes y saludables.
+                Combinación inteligente de extractos vegetales, aceites y
+                phytoactivos, logra preservar la fibra capilar de las acciones
+                externas, vuelve a las fibras más resistentes y saludables.
               </p>
             </div>
           </div>
@@ -359,18 +330,20 @@
                 <img src="./img/mimo-4.png" alt="dosis de plex" />
               </div>
               <p>
-                Para mejorar el aspecto de tu pelo, darle un shock de queratina e irte con el cabello divino en menos de 40 minutos.
+                Para mejorar el aspecto de tu pelo, darle un shock de queratina
+                e irte con el cabello divino en menos de 40 minutos.
               </p>
             </div>
           </div>
         </div>
-      
+
         <!-- LACIO QUE TE QUIERO LACIO -->
         <div class="tratamientos bg-loreal">
           <div class="tratamiento-title">
             <div class="rt-content">
               <div class="">
-                ¡ Lacio que <span class="lacio">te quiero</span> lacio ! </div>
+                ¡ Lacio que <span class="lacio">te quiero</span> lacio !
+              </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
@@ -383,7 +356,8 @@
                 <img src="./img/cafe-argan.png" alt="dosis de plex" />
               </div>
               <p>
-                Sus compuestos a base de óleos vegetales, logran un blend con capacidad hidratante y alísenle intensa.  Formol al 1%
+                Sus compuestos a base de óleos vegetales, logran un blend con
+                capacidad hidratante y alísenle intensa. Formol al 1%
               </p>
             </div>
           </div>
@@ -395,7 +369,9 @@
                 <img src="./img/cafe-violeta.png" alt="cafe violeta" />
               </div>
               <p>
-                Sus compuestos a base de óleos vegetales se asocian a tecnología mat, logrando un alisado permanente, mientras se neutralizan los colores indeseados, con efecto natural perlado. Formol al 1%
+                Sus compuestos a base de óleos vegetales se asocian a tecnología
+                mat, logrando un alisado permanente, mientras se neutralizan los
+                colores indeseados, con efecto natural perlado. Formol al 1%
               </p>
             </div>
           </div>
@@ -403,7 +379,10 @@
           <div class="reparacion">
             <div class="cuerpo-rep">
               <div class="rep-title">
-                <p class="loreal-title">3. ¿Y SI PREFIERO <span class="lacio-org-title">orgánicos?</span></p>
+                <p class="loreal-title">
+                  3. ¿Y SI PREFIERO
+                  <span class="lacio-org-title">orgánicos?</span>
+                </p>
               </div>
               <!-- Organico 1 -->
               <div class="organico">
@@ -412,12 +391,13 @@
                   <img src="./img/cacau-bo.png" alt="cacau bo" />
                 </div>
                 <p>
-                  Alisado progresivo termo activo para todo tipo de cabellos. Sin Formol, sin parabenos y libre de Dioxido de titanio.
+                  Alisado progresivo termo activo para todo tipo de cabellos.
+                  Sin Formol, sin parabenos y libre de Dioxido de titanio.
                 </p>
               </div>
-              
+
               <div class="hr"></div>
-                          
+
               <!-- Organico 2 -->
               <div class="organico">
                 <div class="organico-title">
@@ -425,12 +405,13 @@
                   <img src="./img/iza.png" alt="Iza" />
                 </div>
                 <p>
-                  Listado perfecto, sin frizz y con control de volumen sin dañar el cabello.
+                  Listado perfecto, sin frizz y con control de volumen sin dañar
+                  el cabello.
                 </p>
               </div>
-              
+
               <div class="hr"></div>
-                          
+
               <!-- Organico 3 -->
               <div class="organico">
                 <div class="organico-title">
@@ -438,12 +419,14 @@
                   <img src="./img/sur.png" alt="Sur" />
                 </div>
                 <p>
-                  Desarrollado con una compleja fórmula con propiedades alisantes,  que actúan en sinergia sobre el cabello. Logra una reconstruir la fibra, reducir volumen y eliminar el frizz.
+                  Desarrollado con una compleja fórmula con propiedades
+                  alisantes, que actúan en sinergia sobre el cabello. Logra una
+                  reconstruir la fibra, reducir volumen y eliminar el frizz.
                 </p>
               </div>
-              
+
               <div class="hr"></div>
-            
+
               <!-- Organico 4 -->
               <div class="organico">
                 <div class="organico-title">
@@ -451,7 +434,9 @@
                   <img src="./img/unik.png" alt="Unik" />
                 </div>
                 <p>
-                  Avalado por el MSP, con una forma exclusiva 100% cruelty free, sin parabenos, sin formol, alcoholes ni siliconas. Un pelo más lacio cuidando tu salud.
+                  Avalado por el MSP, con una forma exclusiva 100% cruelty free,
+                  sin parabenos, sin formol, alcoholes ni siliconas. Un pelo más
+                  lacio cuidando tu salud.
                 </p>
               </div>
               <div class="hr"></div>
@@ -462,17 +447,175 @@
                   <img src="./img/blonde-bo.png" alt="Blonde bo" />
                 </div>
                 <p>
-                  Alisado progresivo termo activo exclusivo para cabellos decolorados, rubios y platinados. Sin - Formol, sin parabenos, libre de Dióxido de titanio.
+                  Alisado progresivo termo activo exclusivo para cabellos
+                  decolorados, rubios y platinados. Sin - Formol, sin parabenos,
+                  libre de Dióxido de titanio.
                 </p>
               </div>
-            
             </div>
           </div>
-          
         </div>
-      
-        
-      
+
+        <!-- De mi pelo  un cuadro -->
+        <div class="tratamientos bg-reparacion">
+          <div for="rep" class="tratamiento-title">
+            <div class="rt-content">
+              <div>De mi pelo <span>un cuadro</span></div>
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <div class="reparacion">
+            <img src="./img/arrow.png" alt="arrow" />
+            <div class="container">
+              <!-- Promos -->
+              <div class="promos">
+                <div class="promos-title-servicio">
+                  <p class="p-servicio">
+                    Como nos gusta cuidar tu pelo, todos los servicios de
+                    coloración y decoloración incluyen en el costo el lavado y
+                    un tratamiento de estabilización de ph y una nutrición
+                    intensa, asegurandonos un cabello 100% sano.
+                  </p>
+                </div>
+
+                <div class="pormos-contenedor">
+                  <div
+                    class="pormos-list js-flickity"
+                    data-flickity-options='{ "wrapAround": true }'
+                  >
+                    <div class="promo-servicio">
+                      <img
+                        class="promo-img"
+                        src="./img/s-d-d.png"
+                        alt="Servicio de decoloración"
+                      />
+                    </div>
+
+                    <div class="promo-servicio">
+                      <img
+                        class="promo-img"
+                        src="./img/s-d-c.png"
+                        alt="Servicio de coloración"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acompañante perfecto  -->
+        <div class="tratamientos bg-loreal">
+          <div class="tratamiento-title">
+            <div class="rt-content">
+              <div class="loreal">
+                Acompañante perfecto? <span class="rosado">¡ Si, quiero !</span>
+              </div>
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <!-- LOREAL 1 -->
+          <div class="reparacion">
+            <div class="cuerpo-rep">
+              <p class="t-rosado text-center">
+                Agrega más protección, cuida tu pelo con plex. Los plex permiten
+                que la
+                <strong
+                  >integridad del cabello no se vea comprometida con los
+                  servicios químicos.</strong
+                >
+              </p>
+            </div>
+          </div>
+          <!-- LOREAL 2 -->
+          <div class="reparacion">
+            <div class="cuerpo-rep">
+              <div class="rep-title">
+                <p class="loreal-title">1. OLAPLEX</p>
+                <img src="./img/olaplex.png" alt="dosis de plex" />
+              </div>
+              <p>
+                Reparar los enlaces dañados y rotos en el cabello causados por
+                daños químicos, térmicos y mecánicos, convierte el cabello seco
+                y quebradizo en un cabello suave, brillante y más resistente.
+              </p>
+            </div>
+          </div>
+          <!-- LOREAL 3 -->
+          <div class="reparacion">
+            <div class="cuerpo-rep">
+              <div class="rep-title">
+                <p class="loreal-title">2. SMARTBOND</p>
+                <img src="./img/smartbond.png" alt="dosis de plex" />
+              </div>
+              <p>
+                Sistema compuesto por opti pH que reconstruye los enlaces
+                capilares para un cabello más fuerte, ya que permite una
+                penetración óptima de las moléculas para el desarrollo perfecto
+                del color y el aclarado.
+              </p>
+            </div>
+          </div>
+          <!-- LOREAL 4 -->
+          <div class="reparacion">
+            <div class="cuerpo-rep">
+              <div class="rep-title">
+                <p class="loreal-title">3. AMINOPLEX</p>
+                <img src="./img/aminoplex.png" alt="dosis de plex" />
+              </div>
+              <p>
+                Protección intensiva para decoloraciones y coloraciones, sus
+                agentes neutralizan las agresiones causadas por los procesos
+                químicos.
+              </p>
+            </div>
+          </div>
+          <!-- LOREAL 5 -->
+          <div class="reparacion">
+            <div class="cuerpo-rep">
+              <div class="rep-title">
+                <p class="loreal-title">4. COLOR K</p>
+                <img src="./img/color-k.png" alt="dosis de plex" />
+              </div>
+              <p>
+                <strong>
+                  Agrega un shock de keratina a tu pelo para protegerlo de la
+                  coloración, con un color más duradero y un cabello mucho más
+                  sano.</strong
+                >
+                (Tratamiento nuevo que tiene un efecto maravilloso sobre el
+                cabello, con resultados notorios en un solo uso).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carta de masajes -->
+        <div class="tratamientos bg-mimo">
+          <div for="rep" class="tratamiento-title">
+            <div class="rt-content">
+              <div>Carta de <span>masajes</span> salud y bienestar</div>
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <div class="reparacion">
+            <img src="./img/arrow.png" alt="arrow" />
+            <div class="cuerpo-rep">
+              <div class="rep-title">
+                <p>1. CAFÉ Y ARGAN (REDUCTOR)</p>
+                <img src="./img/cafe-" alt="dosis de plex" />
+              </div>
+              <p>
+                Sus compuestos a base de óleos vegetales, logran un blend con
+                capacidad hidratante y alísenle intensa. Formol al 1%
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>

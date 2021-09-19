@@ -33,36 +33,20 @@
 *{
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 body{
-  width: 100%;
-  height: auto;
+  font-size: 16px;
 }
-.container{
+
+.contenedor{
   width: 100%;
 }
 
 header{
   background-color: #FAF4EF;
-}
-
-.wave {
-  display: block;
-  position: relative;
-  top: -2px;
-  height: 425px;
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1170 425" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(250, 244, 239, 1)" d="M 0 45 C 202.2 45 134.8 108 337 108 L 337 108 L 337 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(250, 244, 239, 1)" d="M 336 108 C 472.2 108 426.8 56 563 56 L 563 56 L 563 0 L 336 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 562 56 C 760.6 56 694.4 104 893 104 L 893 104 L 893 0 L 562 0 Z" stroke-width="0"></path><path fill="rgba(47, 73, 94, 1)" d="M 892 104 C 1058.8 104 1003.2 45 1170 45 L 1170 45 L 1170 0 L 892 0 Z" stroke-width="0"></path></svg>');
-  background-size: cover;
-  background-repeat: no-repeat;
- }
- 
- @media (max-width:1169px) {
-  .wave {
-    background-size: contain;
-  }
- }
- 
+} 
 
 .logo{
   display: flex;
@@ -130,13 +114,8 @@ header .sub-title p:nth-child(2){
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 100px;
+    position: relative;
 }
-
-/* .pormos-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .pormos-contenedor{
     width: 100%;
@@ -336,7 +315,6 @@ header .sub-title p:nth-child(2){
   align-items: center;
   justify-content: space-around;
   position: relative;
-  transition: all 4s ease;
 }
 
 .tratamiento-title{
@@ -506,4 +484,50 @@ body > div > div.menu-desplegable > div.tratamientos.bg-loreal.activo > div:nth-
   width: 90%;
   background-color:#7B6969;
   margin: 30px;
+}
+
+.t-rosado{
+  color: #EE7686 !important;
+}
+
+.garamond{
+  font-family: "Garamond";
+  font-size: 3rem;
+}
+
+.pormos-list{
+  width: 100%;
+}
+
+.promos-title-servicio{
+  width: 100%;
+  margin: 20px;
+}
+
+.promos-title-servicio .p-servicio{
+  font-size: 2.5rem;
+  font-family: "Mont Regular";
+  color: #7B6969;
+  padding: 20px;
+  text-align: center;
+  background-color: #F9CBC9;
+}
+
+.diagonal-box {
+  position: relative;
+}
+
+.diagonal-box:before {
+ position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   transform: skewY(-11deg);
+}
+
+.content {
+ max-width: 50em;
+   margin: 0 auto;
+   position: relative;
 }
