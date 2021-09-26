@@ -21,17 +21,23 @@
 
   <body>
     <header>
-      <div class="logo">
-        <img src="./img/logo.svg" alt="Brilla Bonita" />
+      <div class="bg-img">
+        <img src="./img/img-header.jpg" alt="">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Brilla Bonita" />
+        </div>
       </div>
-    </header>
+      </header>
 
     <div class="contenedor">
       <!-- Promos -->
       <div class="promos">
         <div class="promos-title">
-          <p>Para estar <span>siempre linda</span></p>
-          <img src="./img/arrow.png" alt="arrow" />
+          <p><b>TRATAMIENTOS</b></p>
+        </div>
+        <div class="hr"></div>
+        <div class="promos-title">
+          <p>Para estar<span>siempre linda</span></p>
         </div>
 
         <div class="pormos-contenedor">
@@ -64,10 +70,10 @@
       <!-- Menú desplegable -->
       <div class="menu-desplegable">
         <!-- Reparación -->
-        <div class="tratamientos bg-reparacion">
+        <div class="tratamientos bg-grey">
           <div for="rep" class="tratamiento-title">
             <div class="rt-content">
-              <div><span>Si de reparación</span> habalamos...</div>
+              <div class="title-color"><span>Si de reparación</span>habalamos...</div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
@@ -206,12 +212,12 @@
           </div>
         </div>
         <!-- LOREAL -->
-        <div class="tratamientos bg-loreal">
+        <div class="tratamientos bg-rosado">
           <div class="tratamiento-title">
             <div class="rt-content">
-              <div class="loreal">
-                <span class="rosado">Un tratamiento especial para tí</span> de
-                la mano de Loreal
+              <div class="loreal title-color">
+                <b>Un tratamiento especial para tí</b><br>
+                de la mano de Loreal
               </div>
 
               <i class="fas fa-plus"></i>
@@ -278,13 +284,14 @@
             </div>
           </div>
         </div>
-
         <!-- MIMO AL PELO -->
-        <div class="tratamientos bg-mimo">
+        <div class="tratamientos bg-beige">
           <div class="tratamiento-title">
             <div class="rt-content">
-              <div class="">
-                Por que tu pelo <span class="mimo">necesita que lo mimes…</span>
+              <div class="title-color">
+                Por que tu pelo necesita
+                <br>
+                <span class="mimo">que lo mimes…</span>
               </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
@@ -344,13 +351,12 @@
             </div>
           </div>
         </div>
-
         <!-- LACIO QUE TE QUIERO LACIO -->
-        <div class="tratamientos bg-loreal">
+        <div class="tratamientos bg-rosado">
           <div class="tratamiento-title">
             <div class="rt-content">
-              <div class="">
-                ¡ Lacio que <span class="lacio">te quiero</span> lacio !
+              <div class="fndb title-color">
+              ¡ Lacio que<span class="lacio mimo">te quiero</span>lacio !
               </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
@@ -463,63 +469,45 @@
             </div>
           </div>
         </div>
-
         <!-- De mi pelo  un cuadro -->
-        <div class="tratamientos bg-reparacion">
+        <div class="tratamientos bg-grey">
           <div for="rep" class="tratamiento-title">
             <div class="rt-content">
-              <div>De mi pelo <span>un cuadro</span></div>
+              <div class="title-color">De mi pelo<span>un cuadro</span></div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
           </div>
           <div class="reparacion">
-            <img src="./img/arrow.png" alt="arrow" />
             <div class="container">
               <!-- Promos -->
               <div class="promos">
                 <div class="promos-title-servicio">
                   <p class="p-servicio">
                     Como nos gusta cuidar tu pelo, todos los servicios de
-                    coloración y decoloración incluyen en el costo el lavado y
-                    un tratamiento de estabilización de ph y una nutrición
-                    intensa, asegurandonos un cabello 100% sano.
+                    coloración y decoloración incluyen <span class="t-rosado">en el costo el lavado y
+                      un tratamiento de estabilización de ph y una nutrición
+                      intensa,</span>asegurandonos un cabello 100% sano.
                   </p>
                 </div>
 
-                <div class="pormos-contenedor">
-                  <div
-                    class="pormos-list js-flickity"
-                    data-flickity-options='{ "wrapAround": true }'
-                  >
-                    <div class="promo-servicio">
-                      <img
-                        class="promo-img"
-                        src="./img/s-d-d.png"
-                        alt="Servicio de decoloración"
-                      />
-                    </div>
-
-                    <div class="promo-servicio">
-                      <img
-                        class="promo-img"
-                        src="./img/s-d-c.png"
-                        alt="Servicio de coloración"
-                      />
-                    </div>
+                <div class="servicio">
+                  <div class="s-title">
+                    <p>SERVICIO DE DECOLORACIÓN</p>
                   </div>
                 </div>
+                <div class="servicio"></div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Acompañante perfecto  -->
-        <div class="tratamientos bg-loreal">
+        <div class="tratamientos bg-beige">
           <div class="tratamiento-title">
             <div class="rt-content">
-              <div class="loreal">
-                Acompañante perfecto? <span class="rosado">¡ Si, quiero !</span>
+              <div class="loreal  title-color">
+                Acompañante perfecto?<span class="">¡ Si, quiero !</span>
               </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
@@ -605,7 +593,7 @@
         <div class="tratamientos bg-rosado">
           <div for="rep" class="tratamiento-title">
             <div class="rt-content">
-              <div>Carta de <span>masajes</span> salud y bienestar</div>
+              <div class="title-color">Carta de<span>masajes</span></div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
@@ -723,10 +711,10 @@ PIEDRAS CALIENTES -->
         </div>
 
         <!-- Que brillen tus manos -->
-        <div class="tratamientos bg-loreal">
+        <div class="tratamientos bg-grey">
           <div for="rep" class="tratamiento-title">
             <div class="rt-content">
-              <div>¡Que <span>brillen</span> tus manos!</div>
+              <div class="title-color">¡Que<span>brillen</span> tus manos!</div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
