@@ -1,7 +1,11 @@
 "use strict";
 const tratamientos = document.querySelectorAll(".tratamientos");
 const titulo = document.querySelectorAll(".tratamiento-title");
-
+const promoBrilla = document.querySelector(".promo-brilla");
+const promoBonita =  document.querySelector(".promo-bonita");
+const promoBb =  document.querySelector(".promo-bb");
+const closeBtn =  document.querySelector(".close-btn");
+const popup =  document.querySelector('.popup');
 // #reparaciones > div.tratamiento-title > div > i.fas.fa-plus
 
 titulo.forEach((cadaTitulo, i) => {
@@ -24,3 +28,16 @@ titulo.forEach((cadaTitulo, i) => {
     }
   });
 });
+
+function popupHandler(promo){
+  if (!popup.classList.contains(promo) === 'close') {
+    if (!popup.classList.contains("activo")) {
+      popup.classList.add("activo")
+    }
+  }else{
+    popup.classList.remove("activo")
+  }
+}
+promoBonita.addEventListener('click', popupHandler('promo-bonita'))
+promoBb.addEventListener('click', popupHandler('promo-bb'))
+closeBtn.addEventListener('click', popupHandler('close'))

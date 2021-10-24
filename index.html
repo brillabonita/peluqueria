@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Brilla Bonita Peluquería</title>
     <link
       rel="stylesheet"
@@ -10,6 +11,14 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -22,14 +31,28 @@
   <body>
     <header>
       <div class="bg-img">
-        <img src="./img/img-header.jpg" alt="" />
-        <div class="logo">
-          <img src="./img/logo.svg" alt="Brilla Bonita" />
-        </div>
+        <img src="./img/img-header.png" alt="" />
+      </div>
+      <div
+        class="
+          logo
+          animate__animated animate__pulse animate__infinite animate__slower
+        "
+      >
+        <img src="./img/logo.svg" alt="Brilla Bonita" />
       </div>
     </header>
 
     <div class="contenedor">
+      <!-- POPUP -->
+      <div class="popup">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn">&times;</div>
+          <h2 class="t-popup">Hola</h2>
+          <p>POPUP PROMO</p>
+        </div>
+      </div>
       <!-- Promos -->
       <div class="promos">
         <div class="promos-title">
@@ -37,9 +60,8 @@
         </div>
         <div class="hr"></div>
         <div class="promos-title">
-          <p>Para estar<span>siempre linda</span></p>
+          <p>Para estar<span> siempre linda</span></p>
         </div>
-
         <div class="pormos-contenedor">
           <div
             class="pormos-list js-flickity"
@@ -74,7 +96,7 @@
           <div for="rep" class="tratamiento-title">
             <div class="rt-content">
               <div class="title-color">
-                <span>Si de reparación</span>habalamos...
+                <span>Si de reparación</span> habalamos...
               </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
@@ -122,7 +144,7 @@
               </p>
               <p class="loreal-title">
                 <span class="garamond"> Resultado:</span>
-                <strong>Cabellos más saludables y resistentes</strong>
+                <strong>Cabellos más saludables<br />y resistentes</strong>
               </p>
             </div>
           </div>
@@ -221,8 +243,7 @@
           <div class="tratamiento-title">
             <div class="rt-content">
               <div class="loreal title-color">
-                <b>Un tratamiento especial para tí</b><br />
-                de la mano de Loreal
+                <b>Un tratamiento especial para tí</b> de la mano de Loreal
               </div>
 
               <i class="fas fa-plus"></i>
@@ -295,7 +316,7 @@
             <div class="rt-content">
               <div class="title-color">
                 Por que tu pelo necesita
-                <br />
+                <!-- <br /> -->
                 <span class="mimo">que lo mimes…</span>
               </div>
               <i class="fas fa-plus"></i>
@@ -363,7 +384,7 @@
           <div class="tratamiento-title">
             <div class="rt-content">
               <div class="fndb title-color">
-                ¡ Lacio que<span class="lacio mimo">te quiero</span>lacio !
+                ¡ Lacio que<span class="lacio mimo"> te quiero </span>lacio !
               </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
@@ -470,17 +491,17 @@
                 <p class="organico-texto">
                   Alisado progresivo termo activo exclusivo para cabellos
                   decolorados, rubios y platinados. Sin - Formol, sin parabenos,
-                  libre de Dióxido de titanio.
+                  libre de Dióxido<br />de titanio.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- De mi pelo  un cuadro -->
+        <!-- De mi pelo un cuadro -->
         <div class="tratamientos bg-grey">
           <div for="rep" class="tratamiento-title">
             <div class="rt-content">
-              <div class="title-color">De mi pelo<span>un cuadro</span></div>
+              <div class="title-color">De mi pelo<span> un cuadro</span></div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
@@ -493,9 +514,9 @@
                   Como nos gusta cuidar tu pelo, todos los servicios de
                   coloración y decoloración incluyen
                   <span class="t-rosado"
-                    >en el costo el lavado y un tratamiento de estabilización de
-                    ph y una nutrición intensa,</span
-                  >asegurandonos un cabello 100% sano.
+                    > en el costo el lavado y un tratamiento de estabilización de
+                    ph y una nutrición intensa, </span
+                  >asegurandonos un cabello <br />100% sano.
                 </p>
               </div>
               <div class="servicio">
@@ -532,7 +553,7 @@
           <div class="tratamiento-title">
             <div class="rt-content">
               <div class="loreal title-color">
-                Acompañante perfecto?<span class="">¡ Si, quiero !</span>
+                Acompañante perfecto? <span class="">¡ Si, quiero !</span>
               </div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
@@ -576,7 +597,7 @@
                 Sistema compuesto por opti pH que reconstruye los enlaces
                 capilares para un cabello más fuerte, ya que permite una
                 penetración óptima de las moléculas para el desarrollo perfecto
-                del color<br>y el aclarado.
+                del color<br />y el aclarado.
               </p>
             </div>
           </div>
@@ -589,7 +610,7 @@
               </div>
               <p>
                 Protección intensiva para decoloraciones y coloraciones, sus
-                agentes neutralizan las agresiones causadas por los<br>procesos
+                agentes neutralizan las agresiones causadas por los<br />procesos
                 químicos.
               </p>
             </div>
@@ -617,7 +638,7 @@
         <div class="tratamientos bg-rosado">
           <div for="rep" class="tratamiento-title">
             <div class="rt-content">
-              <div class="title-color">Carta de<span>masajes</span></div>
+              <div class="title-color">Carta de<span> masajes</span></div>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </div>
@@ -635,12 +656,12 @@
                 los problemas de resequedad.
               </p>
               <p>
-                <strong>Lavanda:</strong> Sedante, calmante y equilibra la energía. Indicado para
-                aliviar insomnio y ansiedad.
+                <strong>Lavanda:</strong> Sedante, calmante y equilibra la
+                energía. Indicado para aliviar insomnio y ansiedad.
               </p>
               <p>
-                <strong>Romero:</strong> Aroma fuerte y fresco. Estimulante, antioxidante y
-                alivia la fatiga mental y muscular.
+                <strong>Romero:</strong> Aroma fuerte y fresco. Estimulante,
+                antioxidante y alivia la fatiga mental y muscular.
               </p>
             </div>
           </div>
@@ -734,54 +755,134 @@ PIEDRAS CALIENTES -->
           </div>
         </div>
         <!-- Que brillen tus manos -->
-        <div class="tratamientos bg-grey">
-          <div for="rep" class="tratamiento-title">
+        <div class="tratamientos-activo bg-grey">
+          <div for="rep" class="tratamiento-title-activo">
             <div class="rt-content">
-              <div class="title-color">¡Que<span>brillen</span> tus manos!</div>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
+              <div class="title-color">
+                ¡Que<span> brillen</span> tus manos!
+              </div>
+              <!-- <i class="fas fa-plus"></i>
+              <i class="fas fa-minus"></i> -->
             </div>
           </div>
-          <div class="reparacion bg-crema">
-            <div class="container">
-              <!-- Promos -->
-              <div class="promos">
-                <div class="pormos-contenedor">
-                  <div
-                    class="pormos-list js-flickity"
-                    data-flickity-options='{ "wrapAround": false }'
-                  >
-                    <div class="promo-servicio">
-                      <img
-                        class="promo-img-manos"
-                        src="./img/manicura.png"
-                        alt="Manicura"
-                      />
-                    </div>
+          <div class="reparacion">
+            <!-- <div class="container"> -->
+            <!-- Promos -->
+            <div class="promos">
+              <div class="pormos-contenedor">
+                <div
+                  class="pormos-list js-flickity"
+                  data-flickity-options='{ "wrapAround": false }'
+                >
+                  <div class="promo-servicio">
+                    <img
+                      class="promo-img-manos"
+                      src="./img/manicura.png"
+                      alt="Manicura"
+                    />
+                  </div>
 
-                    <div class="promo-servicio">
-                      <img
-                        class="promo-img-manos"
-                        src="./img/esmaltado.png"
-                        alt="Esmaltado"
-                      />
-                    </div>
+                  <div class="promo-servicio">
+                    <img
+                      class="promo-img-manos"
+                      src="./img/esmaltado.png"
+                      alt="Esmaltado"
+                    />
+                  </div>
 
-                    <div class="promo-servicio">
-                      <img
-                        class="promo-img-manos"
-                        src="./img/semi-permanente.jpg"
-                        alt="Semi permanente"
-                      />
-                    </div>
+                  <div class="promo-servicio">
+                    <img
+                      class="promo-img-manos"
+                      src="./img/semi-permanente.jpg"
+                      alt="Semi permanente"
+                    />
                   </div>
                 </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="bottom-bar">
+        <div class="bottom-bar-img">
+          <img class="fondo" src="./img/realdiad.jpg" alt="" />
+          <div class="bg-rosado-t"></div>
+          <img class="img" src="./img/logo-bottom-bar.png" alt="" />
+        </div>
+
+        <div class="bottom-bar-content">
+          <div class="bottom-bar-title">
+            <p class="title-color fndb">Contanos cómo te gustaría</p>
+            <span class="mimo garamond">y nosotras lo hacemos realidad</span>
+          </div>
+          <p>
+            Por qué el cuidado diario importa también te ofrecemos una amplia
+            línea de tratamientos en casa, para que mimes tu cabello todos los
+            días.
+          </p>
+          <div class="consulta">Consultanos por asesoramiento</div>
+        </div>
+        <div class="blanco">
+          <div class="diagnostico">
+            <div class="red">
+              <p>
+                ¿Querés un diagnostico de tu pelo
+                <strong>totalmente gratis</strong>?
+              </p>
+            </div>
+            <div class="blue">
+              <img src="./img/diagnostico.jpg" alt="" />
+            </div>
+            <div class="green">
+              <a class="mimo" href="#">Ir al diagnóstico</a>
+            </div>
+          </div>
+          <div class="tratamientos bg-grey">
+            <div for="rep" class="tratamiento-title">
+              <div class="rt-content">
+                <div class="">Significados</div>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="logo-footer">
+        <img src="./img/logo-footer.png" alt="" />
+      </div>
+      <div class="social-network">
+        <div class="wpp">
+          <a
+            href="https://api.whatsapp.com/send?phone=59891005510"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="fb">
+          <a
+            href="https://www.facebook.com/brillabonitapeluqueria"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="ig">
+          <a
+            href="https://instagram.com/brillabonitapeluqueria"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <script src="app.js"></script>
   </body>
