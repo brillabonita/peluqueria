@@ -557,13 +557,13 @@ body
 }
 
 .s-title {
-  padding-left: 2em;
   margin-top: 2em;
 }
 
 .s-title p {
   font-size: 2em;
   padding: 10px;
+  padding-left: 1em;
 }
 
 .servicio-content {
@@ -575,6 +575,7 @@ body
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 1.6em;
+  padding-left: 1em;
 }
 
 .servicio-content div {
