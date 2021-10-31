@@ -464,18 +464,18 @@ body > div > div.menu-desplegable > div.tratamientos.activo > div > div > p {
 
 .organico-title p {
   font-family: "Firs neue";
-  font-size: 2.3em;
+  font-size: 1.5em;
   color: #7b6969;
   gap: 1vh;
 }
 
 .organico-texto {
-  font-size: 2em;
+  font-size: 1.4em;
   color: #7b6969;
 }
 
 .organico-title img {
-  height: 60px;
+  height: 25px;
   margin: 2em 0 2em 0;
 }
 
@@ -491,6 +491,11 @@ body
   font-size: 2em;
   color: #7b6969;
   margin: 30px 0;
+}
+.hr-contairner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hr {
@@ -573,7 +578,7 @@ body
 }
 
 .servicio-content div {
-  padding: 5px 10px  5px 10px;
+  padding: 5px 10px 5px 10px;
   border-radius: 50px;
   margin: 5px 0;
   /* width: fit-content;
@@ -647,7 +652,6 @@ body
 
 .bottom-bar-content > .bottom-bar-title p {
   font-size: 2em !important;
-  margin: 10px;
 }
 
 .bottom-bar-content > .bottom-bar-title span {
@@ -708,12 +712,12 @@ body
   font-size: 1.6em;
 }
 
-.green a{
+.green a {
   outline: none;
   text-decoration: none;
 }
 
-.blanco{
+.blanco {
   position: relative;
   background-color: #fff;
 }
@@ -727,7 +731,7 @@ footer {
   background-color: #f7f0eb;
 }
 
-.logo-footer{
+.logo-footer {
   /* height: 30px; */
   width: 100vw;
   height: 10vh;
@@ -735,14 +739,14 @@ footer {
   align-items: center;
   justify-content: center;
 }
-.logo-footer img{
+.logo-footer img {
   width: 100px;
   height: 100px;
   position: relative;
   top: -30px;
 }
 
-.social-network{
+.social-network {
   padding: 10px;
   font-size: 4em;
   display: flex;
@@ -751,7 +755,45 @@ footer {
   justify-content: space-evenly;
 }
 
-.social-network a{
+.social-network a {
   color: black;
   text-decoration: none;
+}
+
+.significados {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.significado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  margin: 10px 0 10px 0;
+  width: 90%;
+}
+
+.significados > div > .rt-content > .title-color{
+  font-size: 2.5em;
+  font-family: "Firs neue DemiBold";
+}
+
+.significado img {
+  height: 50px;
+}
+
+.significado p {
+  font-family: "Firs neue DemiBold";
+  font-size: 2em;
+  color: #db7583;
+}
+
+.significado p span {
+  color: #77454e;
 }

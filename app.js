@@ -10,8 +10,8 @@ const popup =  document.querySelector('.popup');
 
 titulo.forEach((cadaTitulo, i) => {
   titulo[i].addEventListener("click", () => {
-    let mas = document.querySelector("body > div > div.menu-desplegable > div.tratamientos:nth-child(" + (i + 1 ) + ") > div.tratamiento-title > div > i.fas.fa-plus");
-    let menos = document.querySelector("body > div > div.menu-desplegable > div.tratamientos:nth-child(" + (i + 1 ) + ") > div.tratamiento-title > div > i.fas.fa-minus");
+    let mas = document.querySelector(".tratamientos:nth-child(" + (i + 1 ) + ") > div.tratamiento-title > div > i.fas.fa-plus");
+    let menos = document.querySelector(".tratamientos:nth-child(" + (i + 1 ) + ") > div.tratamiento-title > div > i.fas.fa-minus");
     if (!tratamientos[i].classList.contains("activo")) {
       tratamientos.forEach(() => {
         tratamientos[i].classList.remove("activo");
