@@ -1,934 +1,885 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Brilla Bonita Peluquería</title>
-    <link rel="shortcut icon" type="image/jpg" href="./img/logo.png"/>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- <link
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brilla Bonita Peluquería</title>
+  <link rel="shortcut icon" type="image/jpg" href="./img/logo.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     /> -->
-  </head>
+</head>
 
-  <body>
-    <header>
+<body>
+  <header class="bg-beige">
+   <!--
       <div class="bg-img">
-        <img src="./img/img-header.png" alt="" />
+       <img src="./img/img-header.png" alt="" /> 
+    </div>
+  -->
+    <div class="logo">
+      <!-- animate__animated animate__pulse animate__infinite animate__slower -->
+      <img src="./img/logo.svg" alt="Brilla Bonita" />
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <!-- Promos -->
+    <div class="promos">
+      <div class="promos-title">
+        <p><b>TRATAMIENTOS</b></p>
       </div>
-      <div
-        class="
-          logo
-          animate__animated animate__pulse animate__infinite animate__slower
-        "
-      >
-        <img src="./img/logo.svg" alt="Brilla Bonita" />
+
+      <div class="hr-contairner">
+        <div class="hr"></div>
       </div>
-    </header>
 
-    <div class="contenedor">
-      <!-- POPUP -->
-      <div class="popup">
-        <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn">&times;</div>
-          <h2 class="t-popup">Hola</h2>
-          <p>POPUP PROMO</p>
-        </div>
+      <div class="promos-title">
+        <p>Para estar<span> siempre linda</span></p>
       </div>
-      <!-- Promos -->
-      <div class="promos">
-        <div class="promos-title">
-          <p><b>TRATAMIENTOS</b></p>
+      <div class="pormos-contenedor">
+        <div class="pormos-carousel js-flickity" data-flickity-options='{ "wrapAround": false, "resize": true }'>
+          <div class="promo-brilla">
+            <img class="promo-img" src="./img/promo-brilla.png" alt="Promo brilla" />
+          </div>
+
+          <div class="promo-bonita">
+            <img class="promo-img" src="./img/promo-bonita.png" alt="Promo bonita" />
+          </div>
+
+          <div class="promo-bb">
+            <img class="promo-img" src="./img/promo-bb.png" alt="Promo bb" />
+          </div>
         </div>
+        <div class="pormos-list">
+          <div class="promo-brilla">
+            <img class="promo-img" src="./img/promo-brilla.png" alt="Promo brilla" />
+          </div>
 
-        <div class="hr-contairner">
-          <div class="hr"></div>
-        </div>
+          <div class="promo-bonita">
+            <img class="promo-img" src="./img/promo-bonita.png" alt="Promo bonita" />
+          </div>
 
-        <div class="promos-title">
-          <p>Para estar<span> siempre linda</span></p>
-        </div>
-        <div class="pormos-contenedor">
-          <div
-            class="pormos-list js-flickity"
-            data-flickity-options='{ "wrapAround": false, "resize": true }'
-          >
-            <div class="promo-brilla">
-              <img
-                class="promo-img"
-                src="./img/promo-brilla.png"
-                alt="Promo brilla"
-              />
-            </div>
-
-            <div class="promo-bonita">
-              <img
-                class="promo-img"
-                src="./img/promo-bonita.png"
-                alt="Promo bonita"
-              />
-            </div>
-
-            <div class="promo-bb">
-              <img class="promo-img" src="./img/promo-bb.png" alt="Promo bb" />
-            </div>
+          <div class="promo-bb">
+            <img class="promo-img" src="./img/promo-bb.png" alt="Promo bb" />
           </div>
         </div>
       </div>
-      <!-- Menú desplegable -->
-      <div class="menu-desplegable">
-        <!-- Reparación -->
-        <div class="tratamientos bg-grey">
-          <div for="rep" class="tratamiento-title">
-            <div class="rt-content">
-              <div class="title-color">
-                <span>Si de reparación</span> habalamos...
-              </div>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
+    </div>
+    <!-- Menú desplegable -->
+    <div class="menu-desplegable">
+      <!-- Reparación -->
+      <div class="tratamientos-activo bg-grey">
+        <div for="rep" class="tratamiento-title">
+          <div class="rt-content">
+            <div class="title-color">
+              <span>Si de reparación</span> habalamos...
             </div>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
           </div>
-          <!-- Reparacion 1 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>1. DOSIS DE PLEX</p>
-                <img src="./img/reparacion1.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Tratamiento de sanación capilar a base del maravilloso aceite de
-                marula. Recupera cabellos dañados, portege el cabello antes y
-                después de un tratamiento químico.
-              </p>
+        </div>
+        <!-- Reparacion 1 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>1. DOSIS DE PLEX</p>
+              <img src="./img/reparacion1.png" alt="dosis de plex" />
             </div>
+            <p>
+              Tratamiento de sanación capilar a base del maravilloso aceite de
+              marula. Recupera cabellos dañados, portege el cabello antes y
+              después de un tratamiento químico.
+            </p>
           </div>
-          <!-- Reparacion 2 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>2. ULTRA DOSIS DE PROTEÍNAS</p>
-                <img src="./img/reparacion2.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Tratamiento regenerativo a base de aminoácidos para reunicar los
-                puentes de disulfuro dentro del cabello. Resultados instantáneos
-                y a largo plazo. Ideal post decoloración o tinta.
-              </p>
+        </div>
+        <!-- Reparacion 2 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>2. ULTRA DOSIS DE PROTEÍNAS</p>
+              <img src="./img/reparacion2.png" alt="dosis de plex" />
             </div>
+            <p>
+              Tratamiento regenerativo a base de aminoácidos para reunicar los
+              puentes de disulfuro dentro del cabello. Resultados instantáneos
+              y a largo plazo. Ideal post decoloración o tinta.
+            </p>
           </div>
-          <!-- Reparacion 3 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>3. BOTOX K</p>
-                <img src="./img/reparacion3.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Actúa directamente en la reconstrucción capilar con Queratina,
-                Colágeno, Elastina y D-Pantenol que actuán en las partes porosas
-                del cabello.
-              </p>
+        </div>
+        <!-- Reparacion 3 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>3. BOTOX K</p>
+              <img src="./img/reparacion3.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Actúa directamente en la reconstrucción capilar con Queratina,
+              Colágeno, Elastina y D-Pantenol que actuán en las partes porosas
+              del cabello.
+            </p>
+            <p class="loreal-title">
+              <span class="garamond"> Resultado:</span>
+              <strong>Cabellos más saludables y resistentes</strong>
+            </p>
+          </div>
+        </div>
+        <!-- Reparacion 4 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>4. KERA PLUS</p>
+              <img src="./img/reparacion4.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Tratamiento para restaurar la keratina del cabello. Resultados
+              instantáneos, gana en brillo, sedocidad e hidratación.
+            </p>
+          </div>
+        </div>
+        <!-- Reparacion 5 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>5. ESTRELLADA</p>
+              <img src="./img/reparacion5.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Su formulación contiene un blend de aminoácidos que penetran en
+              la fibra aumentando la masa capilar, nutre profundamente las
+              fibras internas<br />del cabello.
+            </p>
+          </div>
+        </div>
+        <!-- Reparacion 6 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>6. ¡ HELP !</p>
+              <img src="./img/reparacion6.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Reconstrucción y reparación intensa de la fibra capilar. Ideal
+              para cabellos con perdida de la elasticidad y como tratamiento
+              previo a decoloración o alisados. Logra un brillo intenso,
+              disciplinado y de mejor calidad.
+            </p>
+          </div>
+        </div>
+        <!-- Reparacion 7 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>7. REPOLARIZATE</p>
+              <img src="./img/reparacion7.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Logra reponer los nutrientes faltantes, mejorando las
+              propiedades físicas de la fibra capilar. Le devuelve la
+              integridad a tus cutículas y dale suavidad a tu pelo.
+            </p>
+          </div>
+        </div>
+        <!-- Reparacion 8 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>8. OLOR A VARNIZ</p>
+              <img src="./img/reparacion8.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Logra cauterizar los cabellos secos y dañado, hidrata y repara
+              de los agresores externos, la brillo y soltura a tu pelo.
+            </p>
+          </div>
+        </div>
+        <!-- Reparacion 9 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>9. EXCUSIVO PARA rubias</p>
+              <img src="./img/reparacion9.png" alt="dosis de plex" />
+            </div>
+            <p>
+              <strong>KERA PLUS BLONDE:</strong> Para restaurar la keratina y
+              mantener hidratados, sanos y brillosos los cabellos rubios y
+              platinados realzando sus reflejos.
+            </p>
+            <!-- <br> -->
+            <p>
+              <strong>HIDRATONE:</strong> Hidrata y protege la fibra de
+              agresores externos mientras eliminas los tonos naranjas
+              indeseables.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- LOREAL -->
+      <div class="tratamientos-activo bg-rosado">
+        <div class="tratamiento-title">
+          <div class="rt-content">
+            <div class="loreal title-color">
+              <b>Un tratamiento especial para tí</b> de la mano de Loreal
+            </div>
+
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+        </div>
+        <!-- LOREAL 1 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">1. BLONDE EXPERT EN 3 PASOS</p>
+              <img src="./img/loreal-1.png" alt="dosis de plex" />
+            </div>
+            <p>
+              <strong>El más recomendado después de una decoloración</strong>
+              de la mano de Loreal, por su acción antioxidante y de
+              protección. Logra un cabello rubio nutrido y brillante con tonos
+              amarillos neutralizados.
+            </p>
+          </div>
+        </div>
+        <!-- LOREAL 2 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">2. PRO-LONGER EN 4 PASOS</p>
+              <img src="./img/loreal-2.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Por qué amamos los cabellos largos y cuidados, prolonger logra
+              renovar tu cabello, haciéndolo más resistente y con puntas más
+              fuerte. Comprobado después de su uso, hay una reducción del 66%
+              de las puntas abiertas.
+            </p>
+          </div>
+        </div>
+        <!-- LOREAL 3 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">3. REPAIR EXPERT EN 3 PASOS</p>
+              <img src="./img/loreal-3.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Cabello más resistente, liso y brillante. Desarrollado para
+              reparar instantáneamente el cabello fino para un efecto de
+              control mas ligero y delicado.
+            </p>
+          </div>
+        </div>
+        <!-- LOREAL 4 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">4. EXPERT COLORED EN 4 PASOS</p>
+              <img src="./img/loreal-4.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Brillo unlocker y tratamiento de escudo de color para el cabello
+              con color. Logra proteger incluso los colores más sensibles,
+              evitando que se desvanezca, aportando nutrición e iluminación a
+              las hebras.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- MIMO AL PELO -->
+      <div class="tratamientos-activo bg-beige">
+        <div class="tratamiento-title">
+          <div class="rt-content">
+            <div class="title-color">
+              Por que tu pelo necesita
+              <!-- <br /> -->
+              <span class="mimo">que lo mimes…</span>
+            </div>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+        </div>
+        <!-- Mimo 1 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>1. BOTOX</p>
+              <img src="./img/mimo-1.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Su exclusiva fórmula Nano White aporta antioxidantes, logrando
+              un brillo intenso con control del frío y reducción<br />del
+              volumen.
+            </p>
+          </div>
+        </div>
+        <!-- Mimo 2 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>2. BOTOX PLATINUM</p>
+              <img src="./img/mimo-2.png" alt="dosis de plex" />
+            </div>
+            <p>
+              A la tecnología Nano White se asocia keratin complex logrando
+              además matizar los tonos no deseados dejando un<br />reflejo
+              perlado.
+            </p>
+          </div>
+        </div>
+        <!-- Mimo 3 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>3. KERA PLUS</p>
+              <img src="./img/mimo-3.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Combinación inteligente de extractos vegetales, aceites y
+              phytoactivos, logra preservar la fibra capilar de las acciones
+              externas, vuelve a las fibras más resistentes y saludables.
+            </p>
+          </div>
+        </div>
+        <!-- Mimo 4 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>4. RECONSTRUCCIÓN TERMINA EXPRESS</p>
+              <img src="./img/mimo-4.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Para mejorar el aspecto de tu pelo, darle un shock de queratina
+              e irte con el cabello divino en menos de 40 minutos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- LACIO QUE TE QUIERO LACIO -->
+      <div class="tratamientos-activo bg-rosado">
+        <div class="tratamiento-title">
+          <div class="rt-content">
+            <div class="fndb title-color">
+              ¡ Lacio que<span class="lacio mimo"> te quiero </span>lacio !
+            </div>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+        </div>
+        <!-- LACIO 1 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">1. CAFÉ Y ARGAN</p>
+              <img src="./img/cafe-argan.png" alt="dosis de plex" />
+            </div>
+            <p>
+              Sus compuestos a base de óleos vegetales, logran un blend con
+              capacidad hidratante y alísenle intensa. Formol al 1%
+            </p>
+          </div>
+        </div>
+        <!-- LACIO 2 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">2. CAFÉ VIOLETA</p>
+              <img src="./img/cafe-violeta.png" alt="cafe violeta" />
+            </div>
+            <p>
+              Sus compuestos a base de óleos vegetales se asocian a tecnología
+              mat, logrando un alisado permanente, mientras se neutralizan los
+              colores indeseados, con efecto natural perlado. Formol al 1%
+            </p>
+          </div>
+        </div>
+        <!-- LACIO 3 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
               <p class="loreal-title">
-                <span class="garamond"> Resultado:</span>
-                <strong>Cabellos más saludables<br />y resistentes</strong>
+                3. ¿Y SI PREFIERO
+                <span class="lacio-org-title">orgánicos?</span>
               </p>
             </div>
-          </div>
-          <!-- Reparacion 4 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>4. KERA PLUS</p>
-                <img src="./img/reparacion4.png" alt="dosis de plex" />
+            <!-- Organico 1 -->
+            <div class="organico">
+              <div class="organico-title">
+                <p class="">CACAU BO</p>
+                <img src="./img/cacau-bo.png" alt="cacau bo" />
               </div>
-              <p>
-                Tratamiento para restaurar la keratina del cabello. Resultados
-                instantáneos, gana en brillo, sedocidad e hidratación.
+              <p class="organico-texto">
+                Alisado progresivo termo activo para todo tipo de cabellos.
+                Sin Formol, sin parabenos y libre de Dioxido de titanio.
               </p>
             </div>
-          </div>
-          <!-- Reparacion 5 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>5. ESTRELLADA</p>
-                <img src="./img/reparacion5.png" alt="dosis de plex" />
+
+            <div class="hr-contairner">
+              <div class="hr"></div>
+            </div>
+
+            <!-- Organico 2 -->
+            <div class="organico">
+              <div class="organico-title">
+                <p class="">IZA</p>
+                <img src="./img/iza.png" alt="Iza" />
               </div>
-              <p>
-                Su formulación contiene un blend de aminoácidos que penetran en
-                la fibra aumentando la masa capilar, nutre profundamente las
-                fibras internas<br />del cabello.
+              <p class="organico-texto">
+                Listado perfecto, sin frizz y con control de volumen sin dañar
+                el cabello.
               </p>
             </div>
-          </div>
-          <!-- Reparacion 6 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>6. ¡ HELP !</p>
-                <img src="./img/reparacion6.png" alt="dosis de plex" />
+
+            <div class="hr-contairner">
+              <div class="hr"></div>
+            </div>
+
+            <!-- Organico 3 -->
+            <div class="organico">
+              <div class="organico-title">
+                <p class="">SUR</p>
+                <img src="./img/sur.png" alt="Sur" />
               </div>
-              <p>
-                Reconstrucción y reparación intensa de la fibra capilar. Ideal
-                para cabellos con perdida de la elasticidad y como tratamiento
-                previo a decoloración o alisados. Logra un brillo intenso,
-                disciplinado y de mejor calidad.
+              <p class="organico-texto">
+                Desarrollado con una compleja fórmula con propiedades
+                alisantes, que actúan en sinergia sobre el cabello. Logra una
+                reconstruir la fibra, reducir volumen y eliminar el frizz.
               </p>
             </div>
-          </div>
-          <!-- Reparacion 7 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>7. REPOLARIZATE</p>
-                <img src="./img/reparacion7.png" alt="dosis de plex" />
+
+            <div class="hr-contairner">
+              <div class="hr"></div>
+            </div>
+
+            <!-- Organico 4 -->
+            <div class="organico">
+              <div class="organico-title">
+                <p class="">UNIK</p>
+                <img src="./img/unik.png" alt="Unik" />
               </div>
-              <p>
-                Logra reponer los nutrientes faltantes, mejorando las
-                propiedades físicas de la fibra capilar. Le devuelve la
-                integridad a tus cutículas y dale suavidad a tu pelo.
+              <p class="organico-texto">
+                Avalado por el MSP, con una forma exclusiva 100% cruelty free,
+                sin parabenos, sin formol, alcoholes ni siliconas. Un pelo más
+                lacio cuidando tu salud.
               </p>
             </div>
-          </div>
-          <!-- Reparacion 8 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>8. OLOR A VARNIZ</p>
-                <img src="./img/reparacion8.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Logra cauterizar los cabellos secos y dañado, hidrata y repara
-                de los agresores externos, la brillo y soltura a tu pelo.
-              </p>
+            <div class="hr-contairner">
+              <div class="hr"></div>
             </div>
-          </div>
-          <!-- Reparacion 9 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>9. EXCUSIVO PARA rubias</p>
-                <img src="./img/reparacion9.png" alt="dosis de plex" />
+            <!-- Organico 5 -->
+            <div class="organico">
+              <div class="organico-title">
+                <p class="">BLONDE BO</p>
+                <img src="./img/blonde-bo.png" alt="Blonde bo" />
               </div>
-              <p>
-                <strong>KERA PLUS BLONDE:</strong> Para restaurar la keratina y
-                mantener hidratados, sanos y brillosos los cabellos rubios y
-                platinados realzando sus reflejos.
-              </p>
-              <!-- <br> -->
-              <p>
-                <strong>HIDRATONE:</strong> Hidrata y protege la fibra de
-                agresores externos mientras eliminas los tonos naranjas
-                indeseables.
+              <p class="organico-texto">
+                Alisado progresivo termo activo exclusivo para cabellos
+                decolorados, rubios y platinados. Sin - Formol, sin parabenos,
+                libre de Dióxido<br />de titanio.
               </p>
             </div>
           </div>
         </div>
-        <!-- LOREAL -->
-        <div class="tratamientos bg-rosado">
-          <div class="tratamiento-title">
-            <div class="rt-content">
-              <div class="loreal title-color">
-                <b>Un tratamiento especial para tí</b> de la mano de Loreal
-              </div>
-
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
-            </div>
-          </div>
-          <!-- LOREAL 1 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">1. BLONDE EXPERT EN 3 PASOS</p>
-                <img src="./img/loreal-1.png" alt="dosis de plex" />
-              </div>
-              <p>
-                <strong>El más recomendado después de una decoloración</strong>
-                de la mano de Loreal, por su acción antioxidante y de
-                protección. Logra un cabello rubio nutrido y brillante con tonos
-                amarillos neutralizados.
-              </p>
-            </div>
-          </div>
-          <!-- LOREAL 2 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">2. PRO-LONGER EN 4 PASOS</p>
-                <img src="./img/loreal-2.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Por qué amamos los cabellos largos y cuidados, prolonger logra
-                renovar tu cabello, haciéndolo más resistente y con puntas más
-                fuerte. Comprobado después de su uso, hay una reducción del 66%
-                de las puntas abiertas.
-              </p>
-            </div>
-          </div>
-          <!-- LOREAL 3 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">3. REPAIR EXPERT EN 3 PASOS</p>
-                <img src="./img/loreal-3.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Cabello más resistente, liso y brillante. Desarrollado para
-                reparar instantáneamente el cabello fino para un efecto de
-                control mas ligero y delicado.
-              </p>
-            </div>
-          </div>
-          <!-- LOREAL 4 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">4. EXPERT COLORED EN 4 PASOS</p>
-                <img src="./img/loreal-4.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Brillo unlocker y tratamiento de escudo de color para el cabello
-                con color. Logra proteger incluso los colores más sensibles,
-                evitando que se desvanezca, aportando nutrición e iluminación a
-                las hebras.
-              </p>
-            </div>
+      </div>
+      <!-- De mi pelo un cuadro -->
+      <div class="tratamientos-activo bg-grey">
+        <div for="rep" class="tratamiento-title">
+          <div class="rt-content">
+            <div class="title-color">De mi pelo<span> un cuadro</span></div>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
           </div>
         </div>
-        <!-- MIMO AL PELO -->
-        <div class="tratamientos bg-beige">
-          <div class="tratamiento-title">
-            <div class="rt-content">
-              <div class="title-color">
-                Por que tu pelo necesita
-                <!-- <br /> -->
-                <span class="mimo">que lo mimes…</span>
-              </div>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
-            </div>
-          </div>
-          <!-- Mimo 1 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>1. BOTOX</p>
-                <img src="./img/mimo-1.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Su exclusiva fórmula Nano White aporta antioxidantes, logrando
-                un brillo intenso con control del frío y reducción<br />del
-                volumen.
+        <div class="reparacion">
+          <!-- Promos -->
+          <div class="promos">
+            <div class="promos-title">
+              <p class="p-servicio">
+                Como nos gusta cuidar tu pelo, todos los servicios de
+                coloración y decoloración incluyen
+                <span class="t-rosado">
+                  en el costo el lavado y un tratamiento de estabilización de
+                  ph y una nutrición intensa, </span>asegurandonos un cabello 100% sano.
               </p>
             </div>
-          </div>
-          <!-- Mimo 2 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>2. BOTOX PLATINUM</p>
-                <img src="./img/mimo-2.png" alt="dosis de plex" />
-              </div>
-              <p>
-                A la tecnología Nano White se asocia keratin complex logrando
-                además matizar los tonos no deseados dejando un<br />reflejo
-                perlado.
-              </p>
-            </div>
-          </div>
-          <!-- Mimo 3 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>3. KERA PLUS</p>
-                <img src="./img/mimo-3.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Combinación inteligente de extractos vegetales, aceites y
-                phytoactivos, logra preservar la fibra capilar de las acciones
-                externas, vuelve a las fibras más resistentes y saludables.
-              </p>
-            </div>
-          </div>
-          <!-- Mimo 4 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>4. RECONSTRUCCIÓN TERMINA EXPRESS</p>
-                <img src="./img/mimo-4.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Para mejorar el aspecto de tu pelo, darle un shock de queratina
-                e irte con el cabello divino en menos de 40 minutos.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- LACIO QUE TE QUIERO LACIO -->
-        <div class="tratamientos bg-rosado">
-          <div class="tratamiento-title">
-            <div class="rt-content">
-              <div class="fndb title-color">
-                ¡ Lacio que<span class="lacio mimo"> te quiero </span>lacio !
-              </div>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
-            </div>
-          </div>
-          <!-- LACIO 1 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">1. CAFÉ Y ARGAN</p>
-                <img src="./img/cafe-argan.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Sus compuestos a base de óleos vegetales, logran un blend con
-                capacidad hidratante y alísenle intensa. Formol al 1%
-              </p>
-            </div>
-          </div>
-          <!-- LACIO 2 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">2. CAFÉ VIOLETA</p>
-                <img src="./img/cafe-violeta.png" alt="cafe violeta" />
-              </div>
-              <p>
-                Sus compuestos a base de óleos vegetales se asocian a tecnología
-                mat, logrando un alisado permanente, mientras se neutralizan los
-                colores indeseados, con efecto natural perlado. Formol al 1%
-              </p>
-            </div>
-          </div>
-          <!-- LACIO 3 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">
-                  3. ¿Y SI PREFIERO
-                  <span class="lacio-org-title">orgánicos?</span>
-                </p>
-              </div>
-              <!-- Organico 1 -->
-              <div class="organico">
-                <div class="organico-title">
-                  <p class="">CACAU BO</p>
-                  <img src="./img/cacau-bo.png" alt="cacau bo" />
+            <div class="servicio">
+              <div class="s-title">
+                <p>SERVICIO DE DECOLORACIÓN</p>
+                <div class="hr-contairner">
+                  <div class="hr"></div>
                 </div>
-                <p class="organico-texto">
-                  Alisado progresivo termo activo para todo tipo de cabellos.
-                  Sin Formol, sin parabenos y libre de Dioxido de titanio.
-                </p>
-              </div>
-
-              <div class="hr-contairner">
-                <div class="hr"></div>
-              </div>
-
-              <!-- Organico 2 -->
-              <div class="organico">
-                <div class="organico-title">
-                  <p class="">IZA</p>
-                  <img src="./img/iza.png" alt="Iza" />
-                </div>
-                <p class="organico-texto">
-                  Listado perfecto, sin frizz y con control de volumen sin dañar
-                  el cabello.
-                </p>
-              </div>
-
-              <div class="hr-contairner">
-                <div class="hr"></div>
-              </div>
-
-              <!-- Organico 3 -->
-              <div class="organico">
-                <div class="organico-title">
-                  <p class="">SUR</p>
-                  <img src="./img/sur.png" alt="Sur" />
-                </div>
-                <p class="organico-texto">
-                  Desarrollado con una compleja fórmula con propiedades
-                  alisantes, que actúan en sinergia sobre el cabello. Logra una
-                  reconstruir la fibra, reducir volumen y eliminar el frizz.
-                </p>
-              </div>
-
-              <div class="hr-contairner">
-                <div class="hr"></div>
-              </div>
-
-              <!-- Organico 4 -->
-              <div class="organico">
-                <div class="organico-title">
-                  <p class="">UNIK</p>
-                  <img src="./img/unik.png" alt="Unik" />
-                </div>
-                <p class="organico-texto">
-                  Avalado por el MSP, con una forma exclusiva 100% cruelty free,
-                  sin parabenos, sin formol, alcoholes ni siliconas. Un pelo más
-                  lacio cuidando tu salud.
-                </p>
-              </div>
-              <div class="hr-contairner">
-                <div class="hr"></div>
-              </div>
-              <!-- Organico 5 -->
-              <div class="organico">
-                <div class="organico-title">
-                  <p class="">BLONDE BO</p>
-                  <img src="./img/blonde-bo.png" alt="Blonde bo" />
-                </div>
-                <p class="organico-texto">
-                  Alisado progresivo termo activo exclusivo para cabellos
-                  decolorados, rubios y platinados. Sin - Formol, sin parabenos,
-                  libre de Dióxido<br />de titanio.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- De mi pelo un cuadro -->
-        <div class="tratamientos bg-grey">
-          <div for="rep" class="tratamiento-title">
-            <div class="rt-content">
-              <div class="title-color">De mi pelo<span> un cuadro</span></div>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
-            </div>
-          </div>
-          <div class="reparacion">
-            <!-- Promos -->
-            <div class="promos">
-              <div class="promos-title">
-                <p class="p-servicio">
-                  Como nos gusta cuidar tu pelo, todos los servicios de
-                  coloración y decoloración incluyen
-                  <span class="t-rosado">
-                    en el costo el lavado y un tratamiento de estabilización de
-                    ph y una nutrición intensa, </span
-                  >asegurandonos un cabello <br />100% sano.
-                </p>
-              </div>
-              <div class="servicio">
-                <div class="s-title">
-                  <p>SERVICIO DE DECOLORACIÓN</p>
-                  <div class="hr-contairner">
-                    <div class="hr"></div>
-                  </div>
-                  <div class="servicio-content">
-                    <div class="servicio-color-1">Inoa by Loreal</div>
-                    <div class="servicio-color-2">Majirel bu Loreal</div>
-                    <div class="servicio-color-2">Color perfect by Wella</div>
-                    <div class="servicio-color-1">Exline</div>
-                  </div>
+                <div class="servicio-content">
+                  <div class="servicio-color-1">Inoa by Loreal</div>
+                  <div class="servicio-color-2">Majirel bu Loreal</div>
+                  <div class="servicio-color-2">Color perfect by Wella</div>
+                  <div class="servicio-color-1">Exline</div>
                 </div>
               </div>
-              <div class="servicio">
-                <div class="s-title">
-                  <p>SERVICIO DE COLORACIÓN</p>
-                  <div class="hr-contairner">
-                    <div class="hr"></div>
-                  </div>
-                  <div class="servicio-content">
-                    <div class="servicio-color-2">Claritos</div>
-                    <div class="servicio-color-1">Balagaye</div>
-                    <div class="servicio-color-2">French Balagaye</div>
-                    <div class="servicio-color-1">Luz de sol</div>
-                    <div class="servicio-color-2">Mechas</div>
-                    <div class="servicio-color-1">Difuminado</div>
-                  </div>
+            </div>
+            <div class="servicio">
+              <div class="s-title">
+                <p>SERVICIO DE COLORACIÓN</p>
+                <div class="hr-contairner">
+                  <div class="hr"></div>
+                </div>
+                <div class="servicio-content">
+                  <div class="servicio-color-2">Claritos</div>
+                  <div class="servicio-color-1">Balagaye</div>
+                  <div class="servicio-color-2">French Balagaye</div>
+                  <div class="servicio-color-1">Luz de sol</div>
+                  <div class="servicio-color-2">Mechas</div>
+                  <div class="servicio-color-1">Difuminado</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Acompañante perfecto  -->
-        <div class="tratamientos bg-beige">
-          <div class="tratamiento-title">
-            <div class="rt-content">
-              <div class="loreal title-color">
-                Acompañante perfecto? <span class="">¡ Si, quiero !</span>
-              </div>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
+      </div>
+      <!-- Acompañante perfecto  -->
+      <div class="tratamientos-activo bg-beige">
+        <div class="tratamiento-title">
+          <div class="rt-content">
+            <div class="loreal title-color">
+              Acompañante perfecto? <span class="">¡ Si, quiero !</span>
             </div>
-          </div>
-          <!-- LOREAL 1 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <p class="t-rosado text-center">
-                Agrega más protección, cuida tu pelo con plex. Los plex permiten
-                que la
-                <strong
-                  >integridad del cabello no se vea comprometida con los
-                  servicios químicos.</strong
-                >
-              </p>
-            </div>
-          </div>
-          <!-- LOREAL 2 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">1. OLAPLEX</p>
-                <img src="./img/olaplex.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Reparar los enlaces dañados y rotos en el cabello causados por
-                daños químicos, térmicos y mecánicos, convierte el cabello seco
-                y quebradizo en un cabello suave, brillante y más resistente.
-              </p>
-            </div>
-          </div>
-          <!-- LOREAL 3 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">2. SMARTBOND</p>
-                <img src="./img/smartbond.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Sistema compuesto por opti pH que reconstruye los enlaces
-                capilares para un cabello más fuerte, ya que permite una
-                penetración óptima de las moléculas para el desarrollo perfecto
-                del color<br />y el aclarado.
-              </p>
-            </div>
-          </div>
-          <!-- LOREAL 4 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">3. AMINOPLEX</p>
-                <img src="./img/aminoplex.png" alt="dosis de plex" />
-              </div>
-              <p>
-                Protección intensiva para decoloraciones y coloraciones, sus
-                agentes neutralizan las agresiones causadas por los<br />procesos
-                químicos.
-              </p>
-            </div>
-          </div>
-          <!-- LOREAL 5 -->
-          <div class="reparacion">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p class="loreal-title">4. COLOR K</p>
-                <img src="./img/color-k.png" alt="dosis de plex" />
-              </div>
-              <p>
-                <strong>
-                  Agrega un shock de keratina a tu pelo para protegerlo de la
-                  coloración, con un color más duradero y un cabello mucho más
-                  sano.</strong
-                >
-                (Tratamiento nuevo que tiene un efecto maravilloso sobre el
-                cabello, con resultados notorios en un solo uso).
-              </p>
-            </div>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
           </div>
         </div>
-        <!-- Carta de masajes -->
-        <div class="tratamientos bg-rosado">
-          <div for="rep" class="tratamiento-title">
-            <div class="rt-content">
-              <div class="title-color">Carta de<span> masajes</span></div>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
-            </div>
+        <!-- LOREAL 1 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <p class="t-rosado text-center">
+              Agrega más protección, cuida tu pelo con plex. Los plex permiten
+              que la
+              <strong>integridad del cabello no se vea comprometida con los
+                servicios químicos.</strong>
+            </p>
           </div>
-          <!-- MASAJE RELAJANTE CON ACEITE DE COCO -->
-          <div class="reparacion bg-mimo">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>MASAJE RELAJANTE CON ACEITE DE COCO</p>
-              </div>
-              <p>
-                Alivia la tensión muscular, relaja y aumenta la producción de
-                endorfinas mediante manipulaciones con aceites esenciales y
-                movimientos suaves, humectando profundamente la piel y mejorando
-                los problemas de resequedad.
-              </p>
-              <p>
-                <strong>Lavanda:</strong> Sedante, calmante y equilibra la
-                energía. Indicado para aliviar insomnio y ansiedad.
-              </p>
-              <p>
-                <strong>Romero:</strong> Aroma fuerte y fresco. Estimulante,
-                antioxidante y alivia la fatiga mental y muscular.
-              </p>
+        </div>
+        <!-- LOREAL 2 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">1. OLAPLEX</p>
+              <img src="./img/olaplex.png" alt="dosis de plex" />
             </div>
+            <p>
+              Reparar los enlaces dañados y rotos en el cabello causados por
+              daños químicos, térmicos y mecánicos, convierte el cabello seco
+              y quebradizo en un cabello suave, brillante y más resistente.
+            </p>
           </div>
-          <!-- MASAJE DESCONTRACTURANTE -->
-          <div class="reparacion bg-crema">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>MASAJE DESCONTRACTURANTE</p>
-              </div>
-              <p>
-                Ideal para relajar la musculatura y disolver contracturas
-                mediante movimientos focalizados en las zonas afectadas.
-              </p>
-              <p>
-                Indicado para aliviar las zonas tensas y contracturadas del
-                cuerpo.
-              </p>
+        </div>
+        <!-- LOREAL 3 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">2. SMARTBOND</p>
+              <img src="./img/smartbond.png" alt="dosis de plex" />
             </div>
+            <p>
+              Sistema compuesto por opti pH que reconstruye los enlaces
+              capilares para un cabello más fuerte, ya que permite una
+              penetración óptima de las moléculas para el desarrollo perfecto
+              del color<br />y el aclarado.
+            </p>
           </div>
-          <!-- MASAJE AYURVEDA -->
-          <div class="reparacion bg-rosado-fuerte">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>MASAJE AYURVEDA</p>
-              </div>
-              <p>
-                El término “Ayurveda” proviene de la medicina tradicional India
-                y significa “la ciencia de la vida” se realiza mediante el uso
-                de aceites aromáticos y tibios. La intensidad varía según el
-                tipo corporal (3 doshas). Su finalidad es el bienestar general
-                de cuerpo y mente.
-              </p>
+        </div>
+        <!-- LOREAL 4 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">3. AMINOPLEX</p>
+              <img src="./img/aminoplex.png" alt="dosis de plex" />
             </div>
+            <p>
+              Protección intensiva para decoloraciones y coloraciones, sus
+              agentes neutralizan las agresiones causadas por los<br />procesos
+              químicos.
+            </p>
           </div>
-          <!-- MASAJE CIRCULATORIO DLM
+        </div>
+        <!-- LOREAL 5 -->
+        <div class="reparacion">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p class="loreal-title">4. COLOR K</p>
+              <img src="./img/color-k.png" alt="dosis de plex" />
+            </div>
+            <p>
+              <strong>
+                Agrega un shock de keratina a tu pelo para protegerlo de la
+                coloración, con un color más duradero y un cabello mucho más
+                sano.</strong>
+              (Tratamiento nuevo que tiene un efecto maravilloso sobre el
+              cabello, con resultados notorios en un solo uso).
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Carta de masajes -->
+      <div class="tratamientos-activo bg-rosado">
+        <div for="rep" class="tratamiento-title">
+          <div class="rt-content">
+            <div class="title-color">Carta de<span> masajes</span></div>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+        </div>
+        <!-- MASAJE RELAJANTE CON ACEITE DE COCO -->
+        <div class="reparacion bg-mimo">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>MASAJE RELAJANTE CON ACEITE DE COCO</p>
+            </div>
+            <p>
+              Alivia la tensión muscular, relaja y aumenta la producción de
+              endorfinas mediante manipulaciones con aceites esenciales y
+              movimientos suaves, humectando profundamente la piel y mejorando
+              los problemas de resequedad.
+            </p>
+            <p>
+              <strong>Lavanda:</strong> Sedante, calmante y equilibra la
+              energía. Indicado para aliviar insomnio y ansiedad.
+            </p>
+            <p>
+              <strong>Romero:</strong> Aroma fuerte y fresco. Estimulante,
+              antioxidante y alivia la fatiga mental y muscular.
+            </p>
+          </div>
+        </div>
+        <!-- MASAJE DESCONTRACTURANTE -->
+        <div class="reparacion bg-crema">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>MASAJE DESCONTRACTURANTE</p>
+            </div>
+            <p>
+              Ideal para relajar la musculatura y disolver contracturas
+              mediante movimientos focalizados en las zonas afectadas.
+            </p>
+            <p>
+              Indicado para aliviar las zonas tensas y contracturadas del
+              cuerpo.
+            </p>
+          </div>
+        </div>
+        <!-- MASAJE AYURVEDA -->
+        <div class="reparacion bg-rosado-fuerte">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>MASAJE AYURVEDA</p>
+            </div>
+            <p>
+              El término “Ayurveda” proviene de la medicina tradicional India
+              y significa “la ciencia de la vida” se realiza mediante el uso
+              de aceites aromáticos y tibios. La intensidad varía según el
+              tipo corporal (3 doshas). Su finalidad es el bienestar general
+              de cuerpo y mente.
+            </p>
+          </div>
+        </div>
+        <!-- MASAJE CIRCULATORIO DLM
 (drenaje linfático manual) -->
-          <div class="reparacion bg-crema">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>MASAJE CIRCULATORIO DLM (drenaje linfático manual)</p>
-              </div>
-              <p>
-                Técnica cuya finalidad es la de
-                <strong
-                  >activar el riego sanguíneo y linfático. Mejora las
-                  inflamaciones y retenciones de líquidos.</strong
-                >
-                Muy indicado para las piernas cansadas y dolor lumbar.
-              </p>
+        <div class="reparacion bg-crema">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>MASAJE CIRCULATORIO DLM (drenaje linfático manual)</p>
             </div>
+            <p>
+              Técnica cuya finalidad es la de
+              <strong>activar el riego sanguíneo y linfático. Mejora las
+                inflamaciones y retenciones de líquidos.</strong>
+              Muy indicado para las piernas cansadas y dolor lumbar.
+            </p>
           </div>
-          <!-- MASAJE CON
+        </div>
+        <!-- MASAJE CON
 PIEDRAS CALIENTES -->
-          <div class="reparacion bg-mimo">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>MASAJE CON PIEDRAS CALIENTES</p>
-              </div>
-              <p>
-                Es una relajante terapia de origen oriental que trabaja no sólo
-                en el <strong>plano físico sino también en el mental</strong>,
-                ya que ayuda a relajar tensiones musculares y a conseguir
-                <strong>un perfecto equilibrio energético.</strong>
-              </p>
+        <div class="reparacion bg-mimo">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>MASAJE CON PIEDRAS CALIENTES</p>
             </div>
+            <p>
+              Es una relajante terapia de origen oriental que trabaja no sólo
+              en el <strong>plano físico sino también en el mental</strong>,
+              ya que ayuda a relajar tensiones musculares y a conseguir
+              <strong>un perfecto equilibrio energético.</strong>
+            </p>
           </div>
-          <!-- MASAJE YESOTERAPIA -->
-          <div class="reparacion bg-rosado-fuerte">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>MASAJE YESOTERAPIA</p>
-              </div>
-              <p>
-                Logra eliminar el exceso de grasa de forma natural, con efecto
-                adelgazante. Ayuda a combatir la celulitis o la flacidez de la
-                piel.
-              </p>
+        </div>
+        <!-- MASAJE YESOTERAPIA -->
+        <div class="reparacion bg-rosado-fuerte">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>MASAJE YESOTERAPIA</p>
             </div>
+            <p>
+              Logra eliminar el exceso de grasa de forma natural, con efecto
+              adelgazante. Ayuda a combatir la celulitis o la flacidez de la
+              piel.
+            </p>
           </div>
-          <!-- MASAJE MODELADOR -->
-          <div class="reparacion bg-crema">
-            <div class="cuerpo-rep">
-              <div class="rep-title">
-                <p>MASAJE MODELADOR</p>
-              </div>
-              <p>
-                Logra disminuir la grasa localizada, reducir la celulitis y
-                mejorar el contorno de piernas abdomen y brazo.
-              </p>
+        </div>
+        <!-- MASAJE MODELADOR -->
+        <div class="reparacion bg-crema">
+          <div class="cuerpo-rep">
+            <div class="rep-title">
+              <p>MASAJE MODELADOR</p>
+            </div>
+            <p>
+              Logra disminuir la grasa localizada, reducir la celulitis y
+              mejorar el contorno de piernas abdomen y brazo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Que brillen tus manos -->
+      <div class="tratamientos-activo bg-grey">
+        <div for="rep" class="tratamiento-title-activo">
+          <div class="rt-content">
+            <div class="title-color">
+              ¡Que<span> brillen</span> tus manos!
             </div>
           </div>
         </div>
-        <!-- Que brillen tus manos -->
-        <div class="tratamientos-activo bg-grey">
-          <div for="rep" class="tratamiento-title-activo">
-            <div class="rt-content">
-              <div class="title-color">
-                ¡Que<span> brillen</span> tus manos!
-              </div>
-            </div>
-          </div>
-          <div class="reparacion">
-            <!-- <div class="container"> -->
-            <!-- Promos -->
-            <div class="promos">
-              <div class="pormos-contenedor">
-                <div
-                  class="pormos-list js-flickity"
-                  data-flickity-options='{ "wrapAround": false }'
-                >
-                  <div class="promo-servicio">
-                    <img
-                      class="promo-img-manos"
-                      src="./img/manicura.png"
-                      alt="Manicura"
-                    />
-                  </div>
+        <div class="reparacion">
+          <!-- <div class="container"> -->
+          <!-- Promos -->
+          <div class="promos">
+            <div class="pormos-contenedor">
+              <div class="pormos-list js-flickity" data-flickity-options='{ "wrapAround": false }'>
+                <div class="promo-servicio">
+                  <img class="promo-img-manos" src="./img/manicura.png" alt="Manicura" />
+                </div>
 
-                  <div class="promo-servicio">
-                    <img
-                      class="promo-img-manos"
-                      src="./img/esmaltado.png"
-                      alt="Esmaltado"
-                    />
-                  </div>
+                <div class="promo-servicio">
+                  <img class="promo-img-manos" src="./img/esmaltado.png" alt="Esmaltado" />
+                </div>
 
-                  <div class="promo-servicio">
-                    <img
-                      class="promo-img-manos"
-                      src="./img/semi-permanente.jpg"
-                      alt="Semi permanente"
-                    />
-                  </div>
+                <div class="promo-servicio">
+                  <img class="promo-img-manos" src="./img/semi-permanente.jpg" alt="Semi permanente" />
                 </div>
               </div>
             </div>
-            <!-- </div> -->
           </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
-    <div class="contenedor">
-      <div class="bottom-bar">
-        <div class="bottom-bar-img">
-          <img class="fondo" src="./img/realdiad.jpg" alt="" />
-          <div class="bg-rosado-t"></div>
-          <img class="img" src="./img/logo-bottom-bar.png" alt="" />
-        </div>
+  </div>
+  <div class="contenedor">
+    <div class="bottom-bar">
+      <div class="bottom-bar-img">
+        <img class="fondo" src="./img/realdiad.jpg" alt="" />
+        <div class="bg-rosado-t"></div>
+        <img class="img" src="./img/logo-bottom-bar.png" alt="" />
+      </div>
 
-        <div class="bottom-bar-content">
-          <div class="bottom-bar-title">
-            <p class="title-color fndb">Contanos cómo te gustaría</p>
-            <span class="mimo garamond">y nosotras lo hacemos realidad</span>
-          </div>
-          <p>
-            Por qué el cuidado diario importa también te ofrecemos una amplia
-            línea de tratamientos en casa, para que mimes tu cabello todos los
-            días.
-          </p>
-          <div class="consulta">Consultanos por asesoramiento</div>
+      <div class="bottom-bar-content">
+        <div class="bottom-bar-title">
+          <p class="title-color fndb">Contanos cómo te gustaría</p>
+          <span class="mimo garamond">y nosotras lo hacemos realidad</span>
         </div>
-        <div class="blanco">
-          <div class="diagnostico">
-            <div class="red">
-              <p>
-                ¿Querés un diagnostico de tu pelo
-                <strong>totalmente gratis</strong>?
-              </p>
-            </div>
-            <div class="blue">
-              <img src="./img/diagnostico.jpg" alt="" />
-            </div>
-            <div class="green">
-              <a class="mimo" href="#">Ir al diagnóstico</a>
+        <p>
+          Por qué el cuidado diario importa también te ofrecemos una amplia
+          línea de tratamientos en casa, para que mimes tu cabello todos los
+          días.
+        </p>
+        <div class="consulta">Consultanos por asesoramiento</div>
+      </div>
+      <div class="blanco">
+        <div class="diagnostico">
+          <div class="red">
+            <p>
+              ¿Querés un diagnostico de tu pelo
+              <strong>totalmente gratis</strong>?
+            </p>
+          </div>
+          <div class="blue">
+            <img src="./img/diagnostico.jpg" alt="" />
+          </div>
+          <div class="green">
+            <a class="mimo" href="#">Ir al diagnóstico</a>
+          </div>
+        </div>
+        <div class="significados">
+          <div class="tratamiento-title">
+            <div class="rt-content">
+              <div class="title-color">Significados</div>
             </div>
           </div>
-          <div class="significados">
-            <div class="tratamiento-title">
-              <div class="rt-content">
-                <div class="title-color">Significados</div>
-              </div>
-            </div>
-           <div class="significado">
-             <p class="titulo">No <span>contiene formol:</span></p>
-             <img src="./img/no-formol.png" alt="No contiene formol">
-           </div>
-           <div class="significado">
+          <div class="significado">
+            <p class="titulo">No <span>contiene formol:</span></p>
+            <img src="./img/no-formol.png" alt="No contiene formol">
+          </div>
+          <div class="significado">
             <p class="titulo">No <span>contiene titanio:</span></p>
-             <img src="./img/no-titanio.png" alt="No contiene titanio">
-           </div>
-           <div class="significado">
+            <img src="./img/no-titanio.png" alt="No contiene titanio">
+          </div>
+          <div class="significado">
             <p class="titulo">No <span>contiene sal:</span></p>
-             <img src="./img/no-sal.png" alt="No contiene sal">
-           </div>
-           <div class="significado">
+            <img src="./img/no-sal.png" alt="No contiene sal">
+          </div>
+          <div class="significado">
             <p class="titulo">No <span>contiene parabenos:</span></p>
-             <img src="./img/no-parabens.png" alt="No contiene parabenos">
-           </div>
-           <div class="significado">
+            <img src="./img/no-parabens.png" alt="No contiene parabenos">
+          </div>
+          <div class="significado">
             <p class="titulo"><span>Gluten free:</span></p>
-             <img src="./img/gluten-free.png" alt="No contiene gluten">
-           </div>
-           <div class="significado">
+            <img src="./img/gluten-free.png" alt="No contiene gluten">
+          </div>
+          <div class="significado">
             <p class="titulo"><span>Vegano:</span></p>
-             <img src="./img/vegano.png" alt="Vegano">
-           </div>
-           <div class="significado">
+            <img src="./img/vegano.png" alt="Vegano">
+          </div>
+          <div class="significado">
             <p class="titulo">No<span> testeado en animales:</span></p>
-             <img src="./img/no-animales.png" alt="No testeado en animales">
-           </div>
-           <div class="significado">
+            <img src="./img/no-animales.png" alt="No testeado en animales">
+          </div>
+          <div class="significado">
             <p class="titulo"><span>Ministerio de salud Pública:</span></p>
-             <img src="./img/msp.png" alt="Ministerio de salud Pública">
-           </div>
+            <img src="./img/msp.png" alt="Ministerio de salud Pública">
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="logo-footer">
-        <img src="./img/logo-footer.png" alt="" />
+  </div>
+  <footer class="footer">
+    <div class="logo-footer">
+      <img src="./img/logo-footer.png" alt="" />
+    </div>
+    <div class="social-network">
+      <div class="wpp">
+        <a href="https://api.whatsapp.com/send?phone=59891005510" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
-      <div class="social-network">
-        <div class="wpp">
-          <a
-            href="https://api.whatsapp.com/send?phone=59891005510"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
-        <div class="fb">
-          <a
-            href="https://www.facebook.com/brillabonitapeluqueria"
-            target="_blank"
-          >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
-        <div class="ig">
-          <a
-            href="https://instagram.com/brillabonitapeluqueria"
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
+      <div class="fb">
+        <a href="https://www.facebook.com/brillabonitapeluqueria" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
       </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
-    <script src="app.js"></script>
-  </body>
+      <div class="ig">
+        <a href="https://instagram.com/brillabonitapeluqueria" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
