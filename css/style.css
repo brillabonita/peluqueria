@@ -783,6 +783,17 @@ footer {
     display: flex;
     flex-direction: row;
   }
+  .promo-servicio {
+    width: 75%;
+    height: 30vh;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
 
   /* tratamientos */
 
@@ -883,7 +894,7 @@ footer {
   }
 
   .cuerpo-rep {
-    width: 90%;
+    width: 100%;
     padding: 15px;
     margin: 0;
     display: flex;
@@ -968,13 +979,11 @@ footer {
   .menu-desplegable > div:nth-child(5) > div.reparacion {
     grid-column: 1 / 3;
   }
-  .menu-desplegable > div:nth-child(6) > div:nth-child(2){
+  .menu-desplegable > div:nth-child(6) > div:nth-child(2) {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
   }
-  .menu-desplegable > div:nth-child(6) > div:nth-child(2) .cuerpo-rep{
+  .menu-desplegable > div:nth-child(6) > div:nth-child(2) .cuerpo-rep {
     align-items: center;
   }
-}
-@media only screen and (min-width: 768px) {
 }
