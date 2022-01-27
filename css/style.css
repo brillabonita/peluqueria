@@ -40,19 +40,16 @@
 body {
   font-size: 10px;
   font-family: "Mont Regular";
-  width: 100vw;
-  /* height: 100vh; */
 }
 
 .contenedor {
-  width: 100vw;
+  width: auto;
   margin-bottom: 70px;
-  /* height: 100vh; */
 }
 
 header {
   position: relative;
-  width: 100vw;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +115,7 @@ header {
 .promos .promo-brilla {
   /* background-color: #e9d3d3; */
   width: 75%;
-  height: 30vh;
+
   padding: 10px;
   margin: 15px;
   display: flex;
@@ -142,7 +139,7 @@ header {
 .promos .promo-bonita {
   /* background-color: #f9cbc9; */
   width: 75%;
-  height: 30vh;
+
   padding: 10px;
   margin: 15px;
   display: flex;
@@ -156,7 +153,7 @@ header {
 .promos .promo-bb {
   /* background-color: #e9d3d3; */
   width: 75%;
-  height: 30vh;
+
   padding: 10px;
   margin: 15px;
   display: flex;
@@ -485,7 +482,7 @@ body
 
 .promo-servicio {
   width: 90%;
-  height: 30vh;
+
   padding: 10px;
   margin: 15px;
   display: flex;
@@ -582,7 +579,7 @@ body
   margin: 10px;
   margin-bottom: 30px;
   padding: 20px;
-  height: 30vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -785,14 +782,17 @@ footer {
   }
   .promo-servicio {
     width: 75%;
-    height: 30vh;
     padding: 10px;
     margin: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-    position: relative;
+    position: static;
+  }
+
+  .promo-servicio img {
+    width: 20rem;
+    box-shadow: 3px 3px 6px rgb(0 0 0 / 20%);
   }
 
   /* tratamientos */
@@ -985,5 +985,29 @@ footer {
   }
   .menu-desplegable > div:nth-child(6) > div:nth-child(2) .cuerpo-rep {
     align-items: center;
+  }
+
+  .bottom-bar {
+    border-radius: 0 0 0 0;
+  }
+
+  .bottom-bar-img {
+    border-radius: 0;
+  }
+
+  .bottom-bar-img .img {
+    width: 150px;
+  }
+
+  .bottom-bar-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .blue{
+    border-radius: 0;
+  }
+  .green a:hover {
+    color: #000 !important;
   }
 }
