@@ -113,11 +113,12 @@ header {
 
 /* PROMO BRILLA */
 .promos .promo-brilla {
-  /* background-color: #e9d3d3; */
+  background-color: #e9d3d3;
   width: 75%;
-
-  padding: 10px;
-  margin: 15px;
+  min-width: 320px;
+  /* max-width: 400px; */
+  /* padding: 10px; */
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,11 +138,12 @@ header {
 
 /* PROMO BONITA */
 .promos .promo-bonita {
-  /* background-color: #f9cbc9; */
+  background-color: #f9cbc9;
   width: 75%;
-
-  padding: 10px;
-  margin: 15px;
+  min-width: 320px;
+  /* max-width: 400px; */
+  /* padding: 10px; */
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,11 +153,12 @@ header {
 
 /* PROMO BB */
 .promos .promo-bb {
-  /* background-color: #e9d3d3; */
+  background-color: #e9d3d3;
   width: 75%;
-
-  padding: 10px;
-  margin: 15px;
+  min-width: 320px;
+  /* max-width: 400px; */
+  /* padding: 10px; */
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -649,6 +652,7 @@ body
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 1.6em;
 }
@@ -656,6 +660,9 @@ body
 .green a {
   outline: none;
   text-decoration: none;
+  width: 200px;
+  border-radius: 2rem;
+  border: solid 1px #db7583;
 }
 
 .blanco {
@@ -721,7 +728,7 @@ footer {
 }
 
 .significados > div > .rt-content > .title-color {
-  font-size: 2.5em;
+  font-size: 1.5rem;
   font-family: "Firs neue DemiBold";
 }
 
@@ -731,7 +738,7 @@ footer {
 
 .significado p {
   font-family: "Firs neue DemiBold";
-  font-size: 2em;
+  font-size: 1rem;
   color: #db7583;
 }
 
@@ -755,16 +762,17 @@ footer {
   }
 
   /* PROMOS */
+
   .promos div p b {
     display: none;
   }
 
   .promos .promos-title {
     text-align: center;
-    padding: 2em;
+    padding: 2rem;
   }
   .promos .promos-title p {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin-top: 20px;
   }
   .pormos-list {
@@ -773,6 +781,20 @@ footer {
   .pormos-carousel {
     display: none;
   }
+
+  /* PROMO BRILLA */
+  .promos .promo-brilla {
+    background-color: transparent;
+  }
+  /* PROMO BONITA */
+  .promos .promo-bonita {
+    background-color: transparent;
+  }
+  /* PROMO BB */
+  .promos .promo-bb {
+    background-color: transparent;
+  }
+
   .promo-img {
     width: 20rem;
   }
@@ -1004,10 +1026,32 @@ footer {
     align-items: center;
   }
 
-  .blue{
+  .blue {
     border-radius: 0;
   }
   .green a:hover {
-    color: #000 !important;
+    background: #db7583;
+    color: white !important;
+  }
+
+  .significados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .significado {
+    width: 40%;
+  }
+
+  .bottom-bar-img {
+    height: 40vh;
+  }
+
+  .diagnostico {
+    height: 40vh;
   }
 }
